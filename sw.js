@@ -1,7 +1,7 @@
 /* Barra: service worker.
    Sube VERSION cada vez que cambies cualquier archivo: así el móvil descarga la versión nueva
    y la app ofrece "Actualizar". */
-const VERSION = "barra-1.0.0";
+const VERSION = "barra-1.0.1";
 const FILES = [
   "./", "index.html", "app.js", "catalogo.json", "manifest.webmanifest",
   "icons/icon-192.png", "icons/icon-512.png", "icons/icon-maskable-512.png", "icons/apple-touch-icon.png",

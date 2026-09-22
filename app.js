@@ -1,5 +1,5 @@
 "use strict";
-const APP_VERSION="1.0.0";
+const APP_VERSION="1.0.1";
 fetch("catalogo.json",{cache:"no-cache"}).then(r=>r.json()).then(main).catch(e=>{
   console.error(e);
   document.getElementById("app").innerHTML='<p class="empty">No se ha podido cargar el catálogo. Abre la app una vez con conexión.</p>';
