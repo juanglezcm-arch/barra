@@ -1,0 +1,3747 @@
+{
+ "version": 3,
+ "actualizado": "2026-09-22",
+ "material_confirmado": [
+  "barra",
+  "paralelas",
+  "pared (parque)",
+  "goma elástica",
+  "mochila para lastre"
+ ],
+ "fuentes": [
+  {
+   "id": "petru-flexiones",
+   "titulo": "TODAS las FLEXIONES de CALISTENIA explicadas (de fácil a difícil)",
+   "autor": "PetruWorkout",
+   "url": "https://www.youtube.com/watch?v=D5QklPQm3mI",
+   "publicado": "2026-09-18",
+   "ingerido": "2026-09-22",
+   "tipo": "catalogo",
+   "aporta": "Ejercicios, orden de progresión, cues y errores. Casi ningún criterio numérico de subida ni programación (series/repes/frecuencia)"
+  },
+  {
+   "id": "petru-niveles-flexiones",
+   "titulo": "Como Empezar y Mejorar tus FLEXIONES (ordenado por niveles)",
+   "autor": "PetruWorkout",
+   "url": "https://www.youtube.com/watch?v=cGXeQF2qB_E",
+   "publicado": "2026-05-12",
+   "tipo": "escalera",
+   "aporta": "Escalera de 11 niveles de flexiones, qué cuenta como repetición válida y criterios sueltos (15 arqueras)",
+   "ingerido": "2026-09-22"
+  },
+  {
+   "id": "petru-niveles-dominadas",
+   "titulo": "Como Empezar y Mejorar tus DOMINADAS (ordenado por niveles)",
+   "autor": "PetruWorkout",
+   "url": "https://www.youtube.com/watch?v=GTnpkjJIPOg",
+   "publicado": "2026-03-25",
+   "tipo": "escalera",
+   "aporta": "Escalera de dominadas de 0 a una mano: isométricos, negativas, explosivas, muscle up, en L, cadera, lastre",
+   "ingerido": "2026-09-22"
+  },
+  {
+   "id": "petru-pino",
+   "titulo": "TODOS los ejercicios de PINO Explicados - Desde nivel 0 hasta EXPERTO",
+   "autor": "PetruWorkout",
+   "url": "https://www.youtube.com/watch?v=78pjvDxppXk",
+   "publicado": "2025-11-11",
+   "tipo": "habilidad",
+   "aporta": "Técnica del pino, progresiones con pared y paralelas, requisitos de flexiones de pino y pino a una mano",
+   "ingerido": "2026-09-22"
+  },
+  {
+   "id": "petru-10-habilidades",
+   "titulo": "10 Habilidades de Calistenia que vas a aprender (en orden)",
+   "autor": "PetruWorkout",
+   "url": "https://www.youtube.com/watch?v=9zF0cTb51Ao",
+   "publicado": "2026-05-06",
+   "tipo": "habilidad",
+   "aporta": "Orden de habilidades, requisitos (20 s colgado, 30 s plancha), rana/enanito, L-sit, pino por fuerza, back/front lever, una mano",
+   "ingerido": "2026-09-22"
+  },
+  {
+   "id": "petru-10-ejercicios",
+   "titulo": "Los 10 MEJORES ejercicios que deberías hacer por el resto de tu vida (sin gym)",
+   "autor": "PetruWorkout",
+   "url": "https://www.youtube.com/watch?v=Wh1wwVkZBlY",
+   "publicado": "2026-01-06",
+   "tipo": "catalogo",
+   "aporta": "Básicos con escalado: dominadas (15 → variantes), remos, fondos, plancha, elevaciones de piernas, sentadilla",
+   "ingerido": "2026-09-22"
+  },
+  {
+   "id": "petru-7-niveles",
+   "titulo": "Los 7 Niveles de un PRINCIPIANTE en Calistenia",
+   "autor": "PetruWorkout",
+   "url": "https://www.youtube.com/watch?v=W4Jzvg7qZLE",
+   "publicado": "2025-10-21",
+   "tipo": "motivacional",
+   "aporta": "Casi nada accionable: confirma el orden rana → enanito → pino → flexiones de pino",
+   "ingerido": "2026-09-22"
+  },
+  {
+   "id": "petru-grasa",
+   "titulo": "5 PASOS para Perder Grasa Abdominal",
+   "autor": "PetruWorkout",
+   "url": "https://www.youtube.com/watch?v=_kWHwxEpSAs",
+   "publicado": "2025-11-07",
+   "tipo": "fuera_de_alcance",
+   "aporta": "Nutrición, sueño y hábitos. Va al proyecto de comidas, no al tracker",
+   "ingerido": "2026-09-22"
+  },
+  {
+   "id": "domein-rutina",
+   "titulo": "Como armar una RUTINA de CALISTENIA (principiantes, intermedios, avanzados)",
+   "autor": "Domein",
+   "url": "https://www.youtube.com/watch?v=wBtOM89nsXg",
+   "publicado": "2024-04-09",
+   "tipo": "programacion",
+   "aporta": "Estructura de sesión: preparación → práctica → refuerzo; series, repeticiones y descansos",
+   "ingerido": "2026-09-22"
+  },
+  {
+   "id": "alge-volumen",
+   "titulo": "VOLUMEN e INTENSIDAD en CALISTENIA",
+   "autor": "algecalistenia",
+   "url": "https://www.youtube.com/watch?v=kQqfoxGyMyM",
+   "publicado": "2025-11-20",
+   "tipo": "programacion",
+   "aporta": "Regla de progresión: series al fallo técnico o RIR 1, volumen que crece solo y cambio de ejercicio; explosivos y fallo",
+   "ingerido": "2026-09-22"
+  },
+  {
+   "id": "bruno-full-planche",
+   "titulo": "¡De 0 a FULL PLANCHE! | Lo Que YO Haría",
+   "autor": "Bruno Focacci",
+   "url": "https://www.youtube.com/watch?v=8yekTu2j_0s",
+   "publicado": "2026-02-02",
+   "tipo": "habilidad",
+   "aporta": "Escalera completa de plancha con criterios de paso en segundos (15 s lean/tuck, 12–15 s adv tuck, 10 s straddle, 7–10 s half)",
+   "ingerido": "2026-09-22"
+  },
+  {
+   "id": "pedro-tuck-press",
+   "titulo": "Los secretos del Press a Tuck Planche (Técnica, Mentalidad y Progresión)",
+   "autor": "Pedro Gadez",
+   "url": "https://www.youtube.com/watch?v=HsvCjXt7sCI",
+   "publicado": "2025-06-02",
+   "tipo": "habilidad",
+   "aporta": "Requisitos y progresión del press a tuck planche, técnica y errores",
+   "ingerido": "2026-09-22"
+  },
+  {
+   "id": "eryc-5-hacks",
+   "titulo": "COMO PROGRESAR MÁS RÁPIDO EN LA CALISTENIA",
+   "autor": "Eryc Ortiz",
+   "url": "https://www.youtube.com/watch?v=POcz4T5OrBQ",
+   "publicado": "2021-10-08",
+   "tipo": "tecnica",
+   "aporta": "5 modificaciones: dominada alta, fondos con depresión escapular, candlestick, HSPU déficit, palmadas",
+   "ingerido": "2026-09-22"
+  }
+ ],
+ "escaleras": [
+  {
+   "id": "base_flexion",
+   "nombre": "Base: hasta la flexión clásica",
+   "patron": "empuje_horizontal",
+   "lineal": true,
+   "peldanos": [
+    "flex_pared",
+    "flex_inclinada",
+    "flex_rodillas",
+    "flex_negativa",
+    "flex_goma",
+    "flex_clasica",
+    "flex_pausa"
+   ]
+  },
+  {
+   "id": "variantes_agarre",
+   "nombre": "Variantes de agarre y estabilidad",
+   "patron": "empuje_horizontal",
+   "lineal": false,
+   "notas": "Accesorios del mismo nivel que la clásica; el orden es el del vídeo, no de dificultad",
+   "peldanos": [
+    "flex_estrecha",
+    "flex_diamante",
+    "flex_agarre_medio",
+    "flex_abierta",
+    "flex_escalonada",
+    "flex_inversa",
+    "flex_inversa_cadera",
+    "flex_mov_lateral",
+    "plancha_toques_hombro"
+   ]
+  },
+  {
+   "id": "declinada_deficit",
+   "nombre": "Declinadas y déficit",
+   "patron": "empuje_horizontal",
+   "lineal": true,
+   "notas": "Diamante/abierta de la declinada son variantes laterales, no peldaños obligatorios",
+   "peldanos": [
+    "flex_declinada",
+    "flex_declinada_diamante",
+    "flex_declinada_abierta",
+    "flex_deficit",
+    "flex_deficit_juntas",
+    "flex_declinada_deficit"
+   ]
+  },
+  {
+   "id": "camino_una_mano",
+   "nombre": "Camino a la flexión a una mano",
+   "patron": "empuje_horizontal",
+   "lineal": true,
+   "notas": "Une el bloque arquera/typewriter (13:47–15:05) con el bloque una mano (26:22–28:09)",
+   "peldanos": [
+    "flex_carga_un_brazo",
+    "flex_una_mano_rodillas",
+    "flex_arquera",
+    "flex_typewriter",
+    "flex_lateral",
+    "flex_una_mano_apoyo",
+    "flex_una_mano_apoyo_elevado",
+    "flex_una_mano_negativa",
+    "flex_una_mano_piernas_abiertas",
+    "flex_una_mano",
+    "flex_una_mano_deficit",
+    "flex_una_mano_declinada"
+   ]
+  },
+  {
+   "id": "auxiliares_triceps_hombro",
+   "nombre": "Auxiliares de tríceps y hombro",
+   "patron": "empuje_horizontal",
+   "lineal": false,
+   "peldanos": [
+    "flex_triceps",
+    "tiger_bend_negativa",
+    "tiger_bend",
+    "transferencia_peso"
+   ]
+  },
+  {
+   "id": "explosivas",
+   "nombre": "Explosivas",
+   "patron": "potencia",
+   "lineal": true,
+   "peldanos": [
+    "flex_explosiva",
+    "flex_despegue",
+    "flex_palmada_pecho",
+    "flex_palmada_frontal",
+    "flex_doble_palmada",
+    "flex_palmada_espalda",
+    "flex_explosiva_desplazamiento",
+    "flex_180",
+    "flex_360",
+    "flex_superman",
+    "flex_azteca"
+   ]
+  },
+  {
+   "id": "empuje_vertical",
+   "nombre": "Pica → pino",
+   "patron": "empuje_vertical",
+   "lineal": true,
+   "peldanos": [
+    "flex_pica",
+    "flex_pica_pies_elevados",
+    "flex_pica_deficit",
+    "flex_pica_pies_elevados_deficit",
+    "flex_pica_unilateral",
+    "hspu_asistida",
+    "hspu_pared_parcial",
+    "hspu_pared",
+    "hspu_pared_deficit",
+    "hspu_libre",
+    "hspu_palmada"
+   ]
+  },
+  {
+   "id": "plancha",
+   "nombre": "Pseudoplancha → full planche",
+   "patron": "empuje_horizontal_skill",
+   "lineal": true,
+   "peldanos": [
+    "lean_planche",
+    "flex_lean_planche",
+    "flex_lean_planche_elevada",
+    "flex_lean_planche_deficit",
+    "flex_tuck_planche",
+    "flex_adv_tuck_planche",
+    "flex_straddle_planche",
+    "flex_full_planche"
+   ]
+  },
+  {
+   "id": "elite",
+   "nombre": "Élite",
+   "patron": "skill",
+   "lineal": false,
+   "peldanos": [
+    "flex_pino_90",
+    "flex_maltese",
+    "plancha_una_mano"
+   ]
+  },
+  {
+   "id": "pino_equilibrio",
+   "nombre": "Pino: equilibrio",
+   "patron": "empuje_vertical",
+   "lineal": true,
+   "peldanos": [
+    "pino_paralelas_hombros",
+    "pino_pared_caminando",
+    "pino_pared_espaldas",
+    "pino_libre",
+    "pino_una_mano"
+   ],
+   "notas": null,
+   "fuentes": [
+    "petru-pino",
+    "petru-10-habilidades"
+   ]
+  },
+  {
+   "id": "pino_fuerza",
+   "nombre": "Rana → pino por fuerza",
+   "patron": "empuje_vertical",
+   "lineal": true,
+   "peldanos": [
+    "rana",
+    "enanito",
+    "pino_fuerza"
+   ],
+   "notas": null,
+   "fuentes": [
+    "petru-10-habilidades",
+    "pedro-tuck-press"
+   ]
+  },
+  {
+   "id": "plancha_aguante",
+   "nombre": "Lean → full planche (aguantes)",
+   "patron": "plancha",
+   "lineal": true,
+   "peldanos": [
+    "lean_planche",
+    "tuck_planche",
+    "adv_tuck_planche",
+    "straddle_planche_goma",
+    "straddle_planche",
+    "half_lay_planche",
+    "full_planche"
+   ],
+   "notas": "Criterios de paso de Bruno Focacci en segundos",
+   "fuentes": [
+    "bruno-full-planche"
+   ]
+  },
+  {
+   "id": "plancha_flexiones",
+   "nombre": "Flexiones de plancha",
+   "patron": "plancha",
+   "lineal": true,
+   "peldanos": [
+    "flex_lean_planche",
+    "flex_lean_planche_elevada",
+    "flex_lean_planche_deficit",
+    "flex_tuck_planche",
+    "flex_adv_tuck_planche",
+    "flex_straddle_planche",
+    "flex_full_planche"
+   ],
+   "notas": null,
+   "fuentes": [
+    "petru-flexiones",
+    "bruno-full-planche"
+   ]
+  },
+  {
+   "id": "press_plancha",
+   "nombre": "Press a pino desde tuck",
+   "patron": "plancha",
+   "lineal": true,
+   "peldanos": [
+    "tuck_press_negativa",
+    "tuck_press_goma",
+    "tuck_press_cadera_alta",
+    "tuck_press"
+   ],
+   "notas": null,
+   "fuentes": [
+    "pedro-tuck-press",
+    "bruno-full-planche"
+   ]
+  },
+  {
+   "id": "dominada_base",
+   "nombre": "Dominadas: de 0 a 10",
+   "patron": "tiron_vertical",
+   "lineal": true,
+   "peldanos": [
+    "colgado_barra",
+    "dominada_isometrico_mitad",
+    "dominada_negativa",
+    "dominada_negativa_pausas",
+    "dominada"
+   ],
+   "notas": null,
+   "fuentes": [
+    "petru-niveles-dominadas"
+   ]
+  },
+  {
+   "id": "tiron_explosivo",
+   "nombre": "Dominada explosiva → cadera",
+   "patron": "tiron_vertical",
+   "lineal": true,
+   "peldanos": [
+    "dominada_explosiva",
+    "muscle_up",
+    "dominada_abdomen",
+    "dominada_cadera"
+   ],
+   "notas": "Orden mezclando dos fuentes: ver conflictos",
+   "fuentes": [
+    "petru-niveles-dominadas",
+    "eryc-5-hacks",
+    "alge-volumen"
+   ]
+  },
+  {
+   "id": "tiron_una_mano",
+   "nombre": "Camino a la dominada a una mano",
+   "patron": "tiron_vertical",
+   "lineal": true,
+   "peldanos": [
+    "aguante_una_mano",
+    "negativa_una_mano",
+    "dominada_una_mano_asistida",
+    "dominada_una_mano"
+   ],
+   "notas": null,
+   "fuentes": [
+    "petru-niveles-dominadas",
+    "petru-10-habilidades"
+   ]
+  },
+  {
+   "id": "tiron_volumen",
+   "nombre": "Dominadas de volumen",
+   "patron": "tiron_vertical",
+   "lineal": true,
+   "peldanos": [
+    "dominada",
+    "dominada_l"
+   ],
+   "notas": null,
+   "fuentes": [
+    "petru-niveles-dominadas",
+    "eryc-5-hacks"
+   ]
+  },
+  {
+   "id": "dominada_lastre",
+   "nombre": "Dominada lastrada",
+   "patron": "tiron_vertical",
+   "lineal": true,
+   "peldanos": [
+    "dominada_lastrada"
+   ],
+   "notas": null,
+   "fuentes": [
+    "petru-niveles-dominadas"
+   ]
+  },
+  {
+   "id": "remo",
+   "nombre": "Remo australiano",
+   "patron": "tiron_horizontal",
+   "lineal": true,
+   "peldanos": [
+    "remo_australiano_rodillas",
+    "remo_australiano",
+    "remo_australiano_horizontal",
+    "remo_arquero",
+    "remo_un_brazo"
+   ],
+   "notas": null,
+   "fuentes": [
+    "petru-niveles-dominadas",
+    "petru-10-ejercicios"
+   ]
+  },
+  {
+   "id": "front_lever",
+   "nombre": "Front lever",
+   "patron": "tiron_horizontal",
+   "lineal": true,
+   "peldanos": [
+    "fl_tuck",
+    "fl_adv_tuck",
+    "fl_goma"
+   ],
+   "notas": null,
+   "fuentes": [
+    "petru-10-habilidades"
+   ]
+  },
+  {
+   "id": "back_lever",
+   "nombre": "Back lever",
+   "patron": "tiron",
+   "lineal": true,
+   "peldanos": [
+    "skin_the_cat",
+    "back_lever"
+   ],
+   "notas": null,
+   "fuentes": [
+    "petru-10-habilidades"
+   ]
+  },
+  {
+   "id": "core_colgado",
+   "nombre": "Core colgado",
+   "patron": "core",
+   "lineal": true,
+   "peldanos": [
+    "elevacion_rodillas",
+    "elevacion_piernas_colgado",
+    "toes_to_bar"
+   ],
+   "notas": null,
+   "fuentes": [
+    "petru-10-habilidades",
+    "petru-10-ejercicios"
+   ]
+  },
+  {
+   "id": "core_suelo",
+   "nombre": "Core en el suelo",
+   "patron": "core",
+   "lineal": true,
+   "peldanos": [
+    "plancha_abdominal",
+    "elevacion_piernas_suelo",
+    "candlestick"
+   ],
+   "notas": null,
+   "fuentes": [
+    "petru-10-ejercicios",
+    "eryc-5-hacks"
+   ]
+  },
+  {
+   "id": "lsit",
+   "nombre": "L-sit",
+   "patron": "core",
+   "lineal": true,
+   "peldanos": [
+    "lsit_tuck",
+    "lsit"
+   ],
+   "notas": null,
+   "fuentes": [
+    "petru-10-habilidades"
+   ]
+  },
+  {
+   "id": "fondos",
+   "nombre": "Fondos",
+   "patron": "empuje_horizontal",
+   "lineal": true,
+   "peldanos": [
+    "fondos",
+    "fondos_rusos"
+   ],
+   "notas": null,
+   "fuentes": [
+    "petru-10-ejercicios",
+    "petru-10-habilidades",
+    "eryc-5-hacks"
+   ]
+  },
+  {
+   "id": "fondos_lastre",
+   "nombre": "Fondos lastrados",
+   "patron": "empuje_horizontal",
+   "lineal": true,
+   "peldanos": [
+    "fondos_lastrados"
+   ],
+   "notas": null,
+   "fuentes": [
+    "petru-10-ejercicios"
+   ]
+  },
+  {
+   "id": "tiger",
+   "nombre": "Tiger bend",
+   "patron": "empuje_horizontal",
+   "lineal": true,
+   "peldanos": [
+    "tiger_bend_negativa",
+    "tiger_bend"
+   ],
+   "notas": null,
+   "fuentes": [
+    "petru-flexiones"
+   ]
+  }
+ ],
+ "ejercicios": [
+  {
+   "id": "flex_pared",
+   "nombre": "Flexión en pared",
+   "alias": [],
+   "escalera": "base_flexion",
+   "orden": 1,
+   "tipo": "repes",
+   "objetivo": "fuerza",
+   "material": [
+    "pared"
+   ],
+   "cues": [
+    "Manos a la altura del pecho, algo más abiertas que los hombros",
+    "Codos hacia atrás pegados al cuerpo, nunca abiertos hacia los lados",
+    "Cuanto más atrás los pies, más inclinado y más difícil"
+   ],
+   "errores": [
+    "Abrir los codos hacia los lados (carga el hombro)"
+   ],
+   "notas": null,
+   "fuentes": [
+    "petru-flexiones@1:20",
+    "petru-niveles-flexiones@0:46"
+   ],
+   "criterios": []
+  },
+  {
+   "id": "flex_inclinada",
+   "nombre": "Flexión inclinada",
+   "alias": [],
+   "escalera": "base_flexion",
+   "orden": 2,
+   "tipo": "repes",
+   "objetivo": "fuerza",
+   "material": [
+    "superficie elevada"
+   ],
+   "cues": [
+    "Cuanto más alta la superficie, más fácil",
+    "Bajar la altura en cuanto deje de costar, hasta llegar al suelo",
+    "Progresión de alturas: mesa → silla → suelo"
+   ],
+   "errores": [],
+   "notas": null,
+   "fuentes": [
+    "petru-flexiones@2:05",
+    "petru-niveles-flexiones@1:01"
+   ],
+   "criterios": [
+    "Pasar a una superficie más baja cuando te resulte cómoda"
+   ]
+  },
+  {
+   "id": "flex_rodillas",
+   "nombre": "Flexión con rodillas",
+   "alias": [],
+   "escalera": "base_flexion",
+   "orden": 3,
+   "tipo": "repes",
+   "objetivo": "fuerza",
+   "material": [
+    "suelo"
+   ],
+   "cues": [
+    "Cuerpo en línea recta: abdomen y glúteo apretados (cabeza a rodillas)",
+    "Bajar hasta rozar el pecho con el suelo",
+    "Imagina un palo de escoba de la cabeza a las rodillas: todo el cuerpo lo toca"
+   ],
+   "errores": [
+    "Dejar caer la cadera y arquear la espalda"
+   ],
+   "notas": null,
+   "fuentes": [
+    "petru-flexiones@2:44",
+    "petru-niveles-flexiones@1:33"
+   ],
+   "criterios": [
+    "No pasar de nivel si cuesta llegar a 10 repes con buena técnica",
+    "Grábate: si no sale como en el vídeo, vuelve al nivel anterior (PetruWorkout)"
+   ]
+  },
+  {
+   "id": "flex_negativa",
+   "nombre": "Flexión negativa",
+   "alias": [],
+   "escalera": "base_flexion",
+   "orden": 4,
+   "tipo": "negativa",
+   "objetivo": "fuerza",
+   "material": [
+    "suelo"
+   ],
+   "cues": [
+    "Bajar lo más lento posible (contar ~3 s)",
+    "Abajo apoyar rodillas y volver arriba"
+   ],
+   "errores": [],
+   "notas": "El autor la señala como la que más fuerza real da del bloque inicial; cuanto más lenta la bajada, más fuerza",
+   "fuentes": [
+    "petru-flexiones@3:30"
+   ],
+   "criterios": []
+  },
+  {
+   "id": "flex_goma",
+   "nombre": "Flexión con goma",
+   "alias": [],
+   "escalera": "base_flexion",
+   "orden": 5,
+   "tipo": "repes",
+   "objetivo": "fuerza",
+   "material": [
+    "goma elástica",
+    "barra"
+   ],
+   "cues": [
+    "Goma atada por encima sujetando cadera o pecho"
+   ],
+   "errores": [],
+   "notas": "Puente entre rodillas y flexión completa",
+   "fuentes": [
+    "petru-flexiones@4:17"
+   ],
+   "criterios": []
+  },
+  {
+   "id": "flex_clasica",
+   "nombre": "Flexión clásica",
+   "alias": [],
+   "escalera": "base_flexion",
+   "orden": 6,
+   "tipo": "repes",
+   "objetivo": "fuerza",
+   "material": [
+    "suelo"
+   ],
+   "cues": [
+    "Manos algo más abiertas que los hombros",
+    "Cuerpo en línea recta: abdomen y glúteo apretados",
+    "Codos hacia atrás pegados al cuerpo, nunca abiertos hacia los lados",
+    "Bajar hasta rozar el pecho con el suelo",
+    "Pausa de 1 s arriba y 1 s abajo"
+   ],
+   "errores": [],
+   "notas": null,
+   "fuentes": [
+    "petru-flexiones@4:41",
+    "petru-niveles-flexiones@2:09"
+   ],
+   "criterios": [
+    "10 perfectas ya es buen nivel; prioriza técnica sobre número",
+    "Repetición válida: brazos totalmente estirados y pecho a 2 cm del suelo; las medias no cuentan (PetruWorkout)"
+   ]
+  },
+  {
+   "id": "flex_pausa",
+   "nombre": "Flexión con pausa abajo",
+   "alias": [],
+   "escalera": "base_flexion",
+   "orden": 7,
+   "tipo": "repes",
+   "objetivo": "fuerza",
+   "material": [
+    "suelo"
+   ],
+   "cues": [
+    "Pausa de 2–3 s abajo antes de subir",
+    "Elimina el impulso"
+   ],
+   "errores": [],
+   "notas": null,
+   "fuentes": [
+    "petru-flexiones@5:20"
+   ],
+   "criterios": []
+  },
+  {
+   "id": "flex_estrecha",
+   "nombre": "Flexión estrecha",
+   "alias": [],
+   "escalera": "variantes_agarre",
+   "orden": 1,
+   "tipo": "repes",
+   "objetivo": "fuerza",
+   "material": [
+    "suelo"
+   ],
+   "cues": [
+    "Manos a la anchura de los hombros o algo menos"
+   ],
+   "errores": [],
+   "notas": "Más tríceps",
+   "fuentes": [
+    "petru-flexiones@5:41"
+   ],
+   "criterios": []
+  },
+  {
+   "id": "flex_diamante",
+   "nombre": "Flexión diamante",
+   "alias": [],
+   "escalera": "variantes_agarre",
+   "orden": 2,
+   "tipo": "repes",
+   "objetivo": "fuerza",
+   "material": [
+    "suelo"
+   ],
+   "cues": [
+    "Pulgares e índices tocándose bajo el pecho",
+    "Si molestan las muñecas: manos rectas y algo separadas"
+   ],
+   "errores": [],
+   "notas": "Más tríceps",
+   "fuentes": [
+    "petru-flexiones@5:41",
+    "petru-niveles-flexiones@3:35"
+   ],
+   "criterios": []
+  },
+  {
+   "id": "flex_agarre_medio",
+   "nombre": "Flexión agarre medio",
+   "alias": [],
+   "escalera": "variantes_agarre",
+   "orden": 3,
+   "tipo": "repes",
+   "objetivo": "fuerza",
+   "material": [
+    "suelo"
+   ],
+   "cues": [],
+   "errores": [],
+   "notas": null,
+   "fuentes": [
+    "petru-flexiones@5:41"
+   ],
+   "criterios": []
+  },
+  {
+   "id": "flex_abierta",
+   "nombre": "Flexión abierta",
+   "alias": [],
+   "escalera": "variantes_agarre",
+   "orden": 4,
+   "tipo": "repes",
+   "objetivo": "fuerza",
+   "material": [
+    "suelo"
+   ],
+   "cues": [
+    "Manos más separadas de lo normal",
+    "Manos lo más separadas posible, dedos apuntando hacia fuera"
+   ],
+   "errores": [],
+   "notas": "Más pecho. El autor la recomienda especialmente porque es la base de las variantes unilaterales posteriores",
+   "fuentes": [
+    "petru-flexiones@6:13",
+    "petru-niveles-flexiones@3:14"
+   ],
+   "criterios": []
+  },
+  {
+   "id": "flex_escalonada",
+   "nombre": "Flexión escalonada",
+   "alias": [],
+   "escalera": "variantes_agarre",
+   "orden": 5,
+   "tipo": "repes",
+   "objetivo": "fuerza",
+   "material": [
+    "suelo"
+   ],
+   "cues": [
+    "Una mano adelantada",
+    "Mitad de repes por lado"
+   ],
+   "errores": [],
+   "notas": "Puente hacia flexión a un brazo",
+   "fuentes": [
+    "petru-flexiones@6:50"
+   ],
+   "criterios": []
+  },
+  {
+   "id": "flex_inversa",
+   "nombre": "Flexión agarre inverso",
+   "alias": [],
+   "escalera": "variantes_agarre",
+   "orden": 6,
+   "tipo": "repes",
+   "objetivo": "fuerza/movilidad",
+   "material": [
+    "suelo"
+   ],
+   "cues": [
+    "Dedos apuntando a los pies",
+    "Ir con calma; no bajar del todo si molesta la muñeca"
+   ],
+   "errores": [],
+   "notas": "Trabaja antebrazo y bíceps",
+   "fuentes": [
+    "petru-flexiones@7:30"
+   ],
+   "criterios": []
+  },
+  {
+   "id": "flex_inversa_cadera",
+   "nombre": "Flexión agarre inverso a la cadera",
+   "alias": [],
+   "escalera": "variantes_agarre",
+   "orden": 7,
+   "tipo": "repes",
+   "objetivo": "fuerza",
+   "material": [
+    "suelo"
+   ],
+   "cues": [
+    "Manos casi a la altura de la cadera, dedos hacia los pies"
+   ],
+   "errores": [],
+   "notas": null,
+   "fuentes": [
+    "petru-flexiones@8:11"
+   ],
+   "criterios": [
+    "Si tiembla mucho la muñeca, quedarse en la inversa normal"
+   ]
+  },
+  {
+   "id": "flex_mov_lateral",
+   "nombre": "Flexión con movimiento lateral",
+   "alias": [],
+   "escalera": "variantes_agarre",
+   "orden": 8,
+   "tipo": "repes",
+   "objetivo": "estabilidad/core",
+   "material": [
+    "suelo"
+   ],
+   "cues": [
+    "Desde abierta: tras cada repe, desplazarse a un lado y alternar"
+   ],
+   "errores": [],
+   "notas": null,
+   "fuentes": [
+    "petru-flexiones@8:39"
+   ],
+   "criterios": []
+  },
+  {
+   "id": "plancha_toques_hombro",
+   "nombre": "Toques de hombro en plancha",
+   "alias": [],
+   "escalera": "variantes_agarre",
+   "orden": 9,
+   "tipo": "repes",
+   "objetivo": "core",
+   "material": [
+    "suelo"
+   ],
+   "cues": [
+    "Cadera inmóvil",
+    "Apretar abdomen y glúteo antes de mover la mano"
+   ],
+   "errores": [
+    "Balancear la cadera para compensar"
+   ],
+   "notas": null,
+   "fuentes": [
+    "petru-flexiones@9:20"
+   ],
+   "criterios": []
+  },
+  {
+   "id": "flex_declinada",
+   "nombre": "Flexión declinada",
+   "alias": [],
+   "escalera": "declinada_deficit",
+   "orden": 1,
+   "tipo": "repes",
+   "objetivo": "fuerza",
+   "material": [
+    "superficie elevada"
+   ],
+   "cues": [
+    "Pies elevados",
+    "Codos hacia atrás pegados al cuerpo, nunca abiertos hacia los lados",
+    "Cuerpo en línea recta: abdomen y glúteo apretados",
+    "Cuanto más altos los pies, más hombro: prepara las flexiones de pino"
+   ],
+   "errores": [
+    "Dejar caer la cadera y arquear la zona lumbar"
+   ],
+   "notas": null,
+   "fuentes": [
+    "petru-flexiones@10:02",
+    "petru-niveles-flexiones@4:14"
+   ],
+   "criterios": []
+  },
+  {
+   "id": "flex_declinada_diamante",
+   "nombre": "Flexión declinada diamante",
+   "alias": [],
+   "escalera": "declinada_deficit",
+   "orden": 2,
+   "tipo": "repes",
+   "objetivo": "fuerza",
+   "material": [
+    "superficie elevada"
+   ],
+   "cues": [],
+   "errores": [],
+   "notas": "Tríceps al máximo",
+   "fuentes": [
+    "petru-flexiones@10:56"
+   ],
+   "criterios": []
+  },
+  {
+   "id": "flex_declinada_abierta",
+   "nombre": "Flexión declinada abierta",
+   "alias": [],
+   "escalera": "declinada_deficit",
+   "orden": 3,
+   "tipo": "repes",
+   "objetivo": "fuerza",
+   "material": [
+    "superficie elevada"
+   ],
+   "cues": [],
+   "errores": [],
+   "notas": "Más pecho",
+   "fuentes": [
+    "petru-flexiones@10:56"
+   ],
+   "criterios": []
+  },
+  {
+   "id": "flex_deficit",
+   "nombre": "Flexión con déficit (profunda)",
+   "alias": [],
+   "escalera": "declinada_deficit",
+   "orden": 4,
+   "tipo": "repes",
+   "objetivo": "fuerza",
+   "material": [
+    "dos apoyos elevados (bloques, paralelas bajas)"
+   ],
+   "cues": [
+    "El pecho baja por debajo del nivel de las manos"
+   ],
+   "errores": [
+    "Ir al rango máximo el primer día (riesgo de hombro)"
+   ],
+   "notas": null,
+   "fuentes": [
+    "petru-flexiones@11:14"
+   ],
+   "criterios": [
+    "Aumentar la profundidad unos centímetros por semana, no de golpe"
+   ]
+  },
+  {
+   "id": "flex_deficit_juntas",
+   "nombre": "Flexión déficit manos juntas",
+   "alias": [],
+   "escalera": "declinada_deficit",
+   "orden": 5,
+   "tipo": "repes",
+   "objetivo": "fuerza",
+   "material": [
+    "dos apoyos elevados"
+   ],
+   "cues": [],
+   "errores": [],
+   "notas": null,
+   "fuentes": [
+    "petru-flexiones@12:02"
+   ],
+   "criterios": []
+  },
+  {
+   "id": "flex_declinada_deficit",
+   "nombre": "Flexión declinada + déficit",
+   "alias": [],
+   "escalera": "declinada_deficit",
+   "orden": 6,
+   "tipo": "repes",
+   "objetivo": "fuerza",
+   "material": [
+    "dos apoyos elevados",
+    "superficie elevada"
+   ],
+   "cues": [],
+   "errores": [],
+   "notas": "Suma dos fuentes de dificultad; sin prisa",
+   "fuentes": [
+    "petru-flexiones@12:12"
+   ],
+   "criterios": []
+  },
+  {
+   "id": "flex_carga_un_brazo",
+   "nombre": "Flexión con carga en un brazo",
+   "alias": [],
+   "escalera": "camino_una_mano",
+   "orden": 1,
+   "tipo": "repes",
+   "objetivo": "fuerza",
+   "material": [
+    "suelo"
+   ],
+   "cues": [
+    "Desde abierta, una mano hace casi todo; la otra solo roza"
+   ],
+   "errores": [
+    "Empujar con las dos por igual"
+   ],
+   "notas": null,
+   "fuentes": [
+    "petru-flexiones@12:26"
+   ],
+   "criterios": []
+  },
+  {
+   "id": "flex_una_mano_rodillas",
+   "nombre": "Flexión a una mano con rodillas",
+   "alias": [],
+   "escalera": "camino_una_mano",
+   "orden": 2,
+   "tipo": "repes",
+   "objetivo": "fuerza",
+   "material": [
+    "suelo"
+   ],
+   "cues": [
+    "Mano centrada",
+    "La otra mano en superficie algo elevada"
+   ],
+   "errores": [],
+   "notas": null,
+   "fuentes": [
+    "petru-flexiones@13:12"
+   ],
+   "criterios": [
+    "Mantener varias semanas antes de quitar las rodillas"
+   ]
+  },
+  {
+   "id": "flex_arquera",
+   "nombre": "Flexión arquera",
+   "alias": [],
+   "escalera": "camino_una_mano",
+   "orden": 3,
+   "tipo": "repes",
+   "objetivo": "fuerza",
+   "material": [
+    "suelo"
+   ],
+   "cues": [
+    "Muy abierto; bajar hacia un lado con el otro brazo totalmente estirado",
+    "Bajar hasta rozar el pecho con el suelo"
+   ],
+   "errores": [
+    "No estirar del todo el codo",
+    "No bajar del todo"
+   ],
+   "notas": "Regresión: con rodillas apoyadas · Regresión: manos menos abiertas y el brazo estirado medio flexionado",
+   "fuentes": [
+    "petru-flexiones@13:47",
+    "petru-niveles-flexiones@4:49"
+   ],
+   "criterios": [
+    "15 repeticiones limpias = muy buena fuerza de brazo (PetruWorkout)"
+   ]
+  },
+  {
+   "id": "flex_typewriter",
+   "nombre": "Flexión typewriter",
+   "alias": [],
+   "escalera": "camino_una_mano",
+   "orden": 4,
+   "tipo": "repes",
+   "objetivo": "fuerza",
+   "material": [
+    "suelo"
+   ],
+   "cues": [
+    "Quedarse abajo y desplazarse de lado a lado sin subir"
+   ],
+   "errores": [],
+   "notas": null,
+   "fuentes": [
+    "petru-flexiones@14:31"
+   ],
+   "criterios": []
+  },
+  {
+   "id": "flex_lateral",
+   "nombre": "Flexión lateral",
+   "alias": [],
+   "escalera": "camino_una_mano",
+   "orden": 5,
+   "tipo": "repes",
+   "objetivo": "fuerza",
+   "material": [
+    "suelo"
+   ],
+   "cues": [
+    "Como dos arqueras seguidas: bajar a un lado, subir, cambiar"
+   ],
+   "errores": [],
+   "notas": null,
+   "fuentes": [
+    "petru-flexiones@15:05"
+   ],
+   "criterios": []
+  },
+  {
+   "id": "flex_una_mano_apoyo",
+   "nombre": "Flexión a una mano con apoyo (agarrando)",
+   "alias": [],
+   "escalera": "camino_una_mano",
+   "orden": 6,
+   "tipo": "repes",
+   "objetivo": "fuerza",
+   "material": [
+    "superficie elevada"
+   ],
+   "cues": [
+    "Piernas muy abiertas",
+    "Mano de trabajo en el centro del pecho; la otra se agarra a algo elevado"
+   ],
+   "errores": [],
+   "notas": null,
+   "fuentes": [
+    "petru-flexiones@26:22"
+   ],
+   "criterios": []
+  },
+  {
+   "id": "flex_una_mano_apoyo_elevado",
+   "nombre": "Flexión a una mano, apoyo elevado sin agarrar",
+   "alias": [],
+   "escalera": "camino_una_mano",
+   "orden": 7,
+   "tipo": "repes",
+   "objetivo": "fuerza",
+   "material": [
+    "superficie elevada"
+   ],
+   "cues": [
+    "La mano libre solo se apoya para equilibrio"
+   ],
+   "errores": [],
+   "notas": null,
+   "fuentes": [
+    "petru-flexiones@26:40"
+   ],
+   "criterios": []
+  },
+  {
+   "id": "flex_una_mano_piernas_abiertas",
+   "nombre": "Flexión a una mano piernas abiertas",
+   "alias": [],
+   "escalera": "camino_una_mano",
+   "orden": 8,
+   "tipo": "repes",
+   "objetivo": "fuerza",
+   "material": [
+    "suelo"
+   ],
+   "cues": [
+    "Piernas muy separadas",
+    "Mano libre a la espalda",
+    "Cadera sin girar",
+    "Codos hacia atrás pegados al cuerpo, nunca abiertos hacia los lados"
+   ],
+   "errores": [],
+   "notas": null,
+   "fuentes": [
+    "petru-flexiones@27:01",
+    "petru-niveles-flexiones@5:25"
+   ],
+   "criterios": []
+  },
+  {
+   "id": "flex_una_mano",
+   "nombre": "Flexión a una mano estricta",
+   "alias": [],
+   "escalera": "camino_una_mano",
+   "orden": 9,
+   "tipo": "repes",
+   "objetivo": "fuerza",
+   "material": [
+    "suelo"
+   ],
+   "cues": [
+    "Piernas algo más juntas",
+    "Mano centrada bajo el pecho",
+    "Equilibrio con abdomen y glúteo",
+    "Piernas abiertas, mano de trabajo en el centro"
+   ],
+   "errores": [],
+   "notas": null,
+   "fuentes": [
+    "petru-flexiones@27:27",
+    "petru-niveles-flexiones@5:25"
+   ],
+   "criterios": []
+  },
+  {
+   "id": "flex_una_mano_deficit",
+   "nombre": "Flexión a una mano con déficit",
+   "alias": [],
+   "escalera": "camino_una_mano",
+   "orden": 10,
+   "tipo": "repes",
+   "objetivo": "fuerza",
+   "material": [
+    "apoyo elevado"
+   ],
+   "cues": [],
+   "errores": [],
+   "notas": "Muy exigente para el hombro; solo con buena base",
+   "fuentes": [
+    "petru-flexiones@27:50"
+   ],
+   "criterios": []
+  },
+  {
+   "id": "flex_una_mano_declinada",
+   "nombre": "Flexión a una mano declinada",
+   "alias": [],
+   "escalera": "camino_una_mano",
+   "orden": 11,
+   "tipo": "repes",
+   "objetivo": "fuerza",
+   "material": [
+    "superficie elevada"
+   ],
+   "cues": [],
+   "errores": [],
+   "notas": null,
+   "fuentes": [
+    "petru-flexiones@28:09"
+   ],
+   "criterios": []
+  },
+  {
+   "id": "flex_triceps",
+   "nombre": "Flexión de tríceps",
+   "alias": [],
+   "escalera": "auxiliares_triceps_hombro",
+   "orden": 1,
+   "tipo": "repes",
+   "objetivo": "fuerza",
+   "material": [
+    "suelo"
+   ],
+   "cues": [
+    "Manos bajo el pecho, algo más juntas que la clásica",
+    "Codos rozando las costillas todo el recorrido",
+    "Bajada lenta"
+   ],
+   "errores": [
+    "Separar los codos (pasa a trabajar pecho)"
+   ],
+   "notas": null,
+   "fuentes": [
+    "petru-flexiones@15:42"
+   ],
+   "criterios": []
+  },
+  {
+   "id": "tiger_bend_negativa",
+   "nombre": "Tiger bend negativa",
+   "alias": [],
+   "escalera": "auxiliares_triceps_hombro",
+   "orden": 2,
+   "tipo": "negativa",
+   "objetivo": "fuerza",
+   "material": [
+    "suelo"
+   ],
+   "cues": [
+    "Bajar lento hasta apoyar antebrazos; volver arriba apoyando rodillas"
+   ],
+   "errores": [],
+   "notas": null,
+   "fuentes": [
+    "petru-flexiones@16:50"
+   ],
+   "criterios": []
+  },
+  {
+   "id": "tiger_bend",
+   "nombre": "Tiger bend push-up",
+   "alias": [],
+   "escalera": "auxiliares_triceps_hombro",
+   "orden": 3,
+   "tipo": "repes",
+   "objetivo": "fuerza",
+   "material": [
+    "suelo"
+   ],
+   "cues": [
+    "Bajar hasta apoyar los antebrazos y empujar hasta estirar los brazos"
+   ],
+   "errores": [],
+   "notas": "Según el autor, de los mejores para preparar hombro y tríceps de cara a la plancha",
+   "fuentes": [
+    "petru-flexiones@16:16"
+   ],
+   "criterios": []
+  },
+  {
+   "id": "transferencia_peso",
+   "nombre": "Transferencia de peso en plancha",
+   "alias": [],
+   "escalera": "auxiliares_triceps_hombro",
+   "orden": 4,
+   "tipo": "repes",
+   "objetivo": "control de hombro",
+   "material": [
+    "suelo"
+   ],
+   "cues": [
+    "Brazos estirados, pies fijos; llevar el peso adelante y atrás",
+    "Lento y controlado"
+   ],
+   "errores": [
+    "Hacerlo rápido o brusco"
+   ],
+   "notas": null,
+   "fuentes": [
+    "petru-flexiones@17:04"
+   ],
+   "criterios": []
+  },
+  {
+   "id": "flex_explosiva",
+   "nombre": "Flexión explosiva",
+   "alias": [],
+   "escalera": "explosivas",
+   "orden": 1,
+   "tipo": "repes",
+   "objetivo": "potencia",
+   "material": [
+    "suelo"
+   ],
+   "cues": [
+    "Bajada controlada, subida lo más rápida posible sin despegar"
+   ],
+   "errores": [],
+   "notas": null,
+   "fuentes": [
+    "petru-flexiones@17:47"
+   ],
+   "criterios": []
+  },
+  {
+   "id": "flex_despegue",
+   "nombre": "Flexión con despegue de manos",
+   "alias": [],
+   "escalera": "explosivas",
+   "orden": 2,
+   "tipo": "repes",
+   "objetivo": "potencia",
+   "material": [
+    "suelo"
+   ],
+   "cues": [
+    "Amortiguar la caída con codos ligeramente flexionados"
+   ],
+   "errores": [
+    "Caer con los brazos rígidos"
+   ],
+   "notas": null,
+   "fuentes": [
+    "petru-flexiones@18:13"
+   ],
+   "criterios": []
+  },
+  {
+   "id": "flex_palmada_pecho",
+   "nombre": "Flexión con palmada bajo el pecho",
+   "alias": [],
+   "escalera": "explosivas",
+   "orden": 3,
+   "tipo": "repes",
+   "objetivo": "potencia",
+   "material": [
+    "suelo"
+   ],
+   "cues": [
+    "Aterriza con los dedos y luego la palma, no con impacto en la muñeca",
+    "No uses la cadera para impulsarte"
+   ],
+   "errores": [],
+   "notas": null,
+   "fuentes": [
+    "petru-flexiones@18:35",
+    "eryc-5-hacks@6:02"
+   ],
+   "criterios": []
+  },
+  {
+   "id": "flex_palmada_frontal",
+   "nombre": "Flexión con palmada frontal",
+   "alias": [],
+   "escalera": "explosivas",
+   "orden": 4,
+   "tipo": "repes",
+   "objetivo": "potencia",
+   "material": [
+    "suelo"
+   ],
+   "cues": [],
+   "errores": [],
+   "notas": null,
+   "fuentes": [
+    "petru-flexiones@18:35"
+   ],
+   "criterios": []
+  },
+  {
+   "id": "flex_doble_palmada",
+   "nombre": "Flexión con doble palmada",
+   "alias": [],
+   "escalera": "explosivas",
+   "orden": 5,
+   "tipo": "repes",
+   "objetivo": "potencia",
+   "material": [
+    "suelo"
+   ],
+   "cues": [],
+   "errores": [],
+   "notas": null,
+   "fuentes": [
+    "petru-flexiones@18:35"
+   ],
+   "criterios": []
+  },
+  {
+   "id": "flex_palmada_espalda",
+   "nombre": "Flexión con palmada en la espalda",
+   "alias": [],
+   "escalera": "explosivas",
+   "orden": 6,
+   "tipo": "repes",
+   "objetivo": "potencia",
+   "material": [
+    "suelo"
+   ],
+   "cues": [],
+   "errores": [],
+   "notas": null,
+   "fuentes": [
+    "petru-flexiones@18:35"
+   ],
+   "criterios": []
+  },
+  {
+   "id": "flex_explosiva_desplazamiento",
+   "nombre": "Flexión explosiva con desplazamiento",
+   "alias": [],
+   "escalera": "explosivas",
+   "orden": 7,
+   "tipo": "repes",
+   "objetivo": "potencia",
+   "material": [
+    "suelo"
+   ],
+   "cues": [
+    "Aterrizar centrado, ambas manos a la misma altura"
+   ],
+   "errores": [],
+   "notas": null,
+   "fuentes": [
+    "petru-flexiones@19:25"
+   ],
+   "criterios": []
+  },
+  {
+   "id": "flex_180",
+   "nombre": "Flexión 180º",
+   "alias": [],
+   "escalera": "explosivas",
+   "orden": 8,
+   "tipo": "repes",
+   "objetivo": "potencia",
+   "material": [
+    "suelo"
+   ],
+   "cues": [],
+   "errores": [],
+   "notas": null,
+   "fuentes": [
+    "petru-flexiones@19:52"
+   ],
+   "criterios": []
+  },
+  {
+   "id": "flex_360",
+   "nombre": "Flexión 360º",
+   "alias": [],
+   "escalera": "explosivas",
+   "orden": 9,
+   "tipo": "repes",
+   "objetivo": "potencia",
+   "material": [
+    "suelo"
+   ],
+   "cues": [],
+   "errores": [],
+   "notas": null,
+   "fuentes": [
+    "petru-flexiones@20:08"
+   ],
+   "criterios": [
+    "Solo cuando la de 180º sale con soltura y segura"
+   ]
+  },
+  {
+   "id": "flex_superman",
+   "nombre": "Flexión Superman",
+   "alias": [],
+   "escalera": "explosivas",
+   "orden": 10,
+   "tipo": "repes",
+   "objetivo": "potencia",
+   "material": [
+    "suelo"
+   ],
+   "cues": [],
+   "errores": [],
+   "notas": null,
+   "fuentes": [
+    "petru-flexiones@20:30"
+   ],
+   "criterios": []
+  },
+  {
+   "id": "flex_azteca",
+   "nombre": "Flexión azteca",
+   "alias": [],
+   "escalera": "explosivas",
+   "orden": 11,
+   "tipo": "repes",
+   "objetivo": "potencia",
+   "material": [
+    "suelo"
+   ],
+   "cues": [
+    "Despegue + flexión de cadera; tocar los pies con las manos"
+   ],
+   "errores": [],
+   "notas": null,
+   "fuentes": [
+    "petru-flexiones@20:55"
+   ],
+   "criterios": [
+    "Solo con las explosivas anteriores dominadas"
+   ]
+  },
+  {
+   "id": "flex_pica",
+   "nombre": "Flexión pica",
+   "alias": [],
+   "escalera": "empuje_vertical",
+   "orden": 1,
+   "tipo": "repes",
+   "objetivo": "fuerza",
+   "material": [
+    "suelo"
+   ],
+   "cues": [
+    "V invertida, cadera muy alta",
+    "Bajar la cabeza en diagonal hacia el suelo"
+   ],
+   "errores": [
+    "No subir suficiente la cadera (se convierte en flexión normal)"
+   ],
+   "notas": "El autor pide dedicarle mucho tiempo: puente hacia el pino",
+   "fuentes": [
+    "petru-flexiones@21:55"
+   ],
+   "criterios": []
+  },
+  {
+   "id": "flex_pica_pies_elevados",
+   "nombre": "Flexión pica pies elevados",
+   "alias": [],
+   "escalera": "empuje_vertical",
+   "orden": 2,
+   "tipo": "repes",
+   "objetivo": "fuerza",
+   "material": [
+    "superficie elevada"
+   ],
+   "cues": [
+    "Cuerpo más vertical = más hombro"
+   ],
+   "errores": [],
+   "notas": null,
+   "fuentes": [
+    "petru-flexiones@22:44"
+   ],
+   "criterios": []
+  },
+  {
+   "id": "flex_pica_deficit",
+   "nombre": "Flexión pica con déficit",
+   "alias": [],
+   "escalera": "empuje_vertical",
+   "orden": 3,
+   "tipo": "repes",
+   "objetivo": "fuerza",
+   "material": [
+    "dos apoyos elevados"
+   ],
+   "cues": [],
+   "errores": [],
+   "notas": null,
+   "fuentes": [
+    "petru-flexiones@22:44"
+   ],
+   "criterios": []
+  },
+  {
+   "id": "flex_pica_pies_elevados_deficit",
+   "nombre": "Flexión pica pies elevados + déficit",
+   "alias": [],
+   "escalera": "empuje_vertical",
+   "orden": 4,
+   "tipo": "repes",
+   "objetivo": "fuerza",
+   "material": [
+    "dos apoyos elevados",
+    "superficie elevada"
+   ],
+   "cues": [],
+   "errores": [],
+   "notas": null,
+   "fuentes": [
+    "petru-flexiones@22:44"
+   ],
+   "criterios": [
+    "Subir de variante de una en una; no mezclarlas el primer día"
+   ]
+  },
+  {
+   "id": "flex_pica_unilateral",
+   "nombre": "Flexión pica unilateral",
+   "alias": [],
+   "escalera": "empuje_vertical",
+   "orden": 5,
+   "tipo": "repes",
+   "objetivo": "fuerza",
+   "material": [
+    "suelo"
+   ],
+   "cues": [
+    "Una mano hace casi todo; la otra solo equilibra"
+   ],
+   "errores": [],
+   "notas": "Paso hacia el pino a una mano",
+   "fuentes": [
+    "petru-flexiones@23:08"
+   ],
+   "criterios": []
+  },
+  {
+   "id": "hspu_asistida",
+   "nombre": "Flexión de pino asistida",
+   "alias": [],
+   "escalera": "empuje_vertical",
+   "orden": 6,
+   "tipo": "repes",
+   "objetivo": "fuerza",
+   "material": [
+    "goma elástica o compañero"
+   ],
+   "cues": [],
+   "errores": [],
+   "notas": null,
+   "fuentes": [
+    "petru-flexiones@23:31"
+   ],
+   "criterios": []
+  },
+  {
+   "id": "hspu_pared_parcial",
+   "nombre": "Flexión de pino contra pared (rango parcial)",
+   "alias": [],
+   "escalera": "empuje_vertical",
+   "orden": 7,
+   "tipo": "repes",
+   "objetivo": "fuerza",
+   "material": [
+    "pared"
+   ],
+   "cues": [
+    "Bajar solo lo que permita volver a subir; la repe tiene que completarse"
+   ],
+   "errores": [],
+   "notas": null,
+   "fuentes": [
+    "petru-flexiones@23:54"
+   ],
+   "criterios": []
+  },
+  {
+   "id": "hspu_pared",
+   "nombre": "Flexión de pino contra pared (rango completo)",
+   "alias": [],
+   "escalera": "empuje_vertical",
+   "orden": 8,
+   "tipo": "repes",
+   "objetivo": "fuerza",
+   "material": [
+    "pared"
+   ],
+   "cues": [
+    "Bajar hasta casi tocar el suelo con la cabeza, con control",
+    "Fija la mirada en un punto del suelo, sin mover la cabeza",
+    "Si no llegas abajo, haz mini-flexiones",
+    "Sin perder el abdomen ni arquear la espalda"
+   ],
+   "errores": [],
+   "notas": "Según el autor, aquí se construye la fuerza de hombro real",
+   "fuentes": [
+    "petru-flexiones@24:36",
+    "petru-niveles-flexiones@6:03",
+    "eryc-5-hacks@4:42"
+   ],
+   "criterios": [
+    "Quedarse varias semanas aquí antes de complicarlo"
+   ]
+  },
+  {
+   "id": "hspu_pared_deficit",
+   "nombre": "Flexión de pino contra pared con déficit",
+   "alias": [],
+   "escalera": "empuje_vertical",
+   "orden": 9,
+   "tipo": "repes",
+   "objetivo": "fuerza",
+   "material": [
+    "pared",
+    "dos apoyos elevados"
+   ],
+   "cues": [
+    "Profundidad progresiva: empieza a 90º y baja poco a poco por debajo del suelo"
+   ],
+   "errores": [],
+   "notas": null,
+   "fuentes": [
+    "petru-flexiones@24:59",
+    "eryc-5-hacks@5:01"
+   ],
+   "criterios": [
+    "Solo cuando el rango completo contra la pared resulte cómodo"
+   ]
+  },
+  {
+   "id": "hspu_libre",
+   "nombre": "Flexión de pino libre",
+   "alias": [],
+   "escalera": "empuje_vertical",
+   "orden": 10,
+   "tipo": "repes",
+   "objetivo": "fuerza/skill",
+   "material": [
+    "suelo"
+   ],
+   "cues": [
+    "Todo el cuerpo rígido, abdomen al máximo",
+    "Equilibrio con las yemas de los dedos",
+    "Aprieta abdomen, glúteos y piernas",
+    "No lleves las piernas atrás: mantenlas cerca del eje",
+    "Al bajar, lleva el cuerpo un poco hacia atrás sin arquear, sin exagerar"
+   ],
+   "errores": [],
+   "notas": "Limita el control/equilibrio más que la fuerza; no tener prisa por dejar la pared",
+   "fuentes": [
+    "petru-flexiones@25:24",
+    "petru-niveles-flexiones@6:35",
+    "petru-pino@3:20",
+    "petru-10-habilidades@9:20"
+   ],
+   "criterios": [
+    "Requisito: pino dominado, 10–15 s de aguante; la fuerza se construye con muchísimas en pared (PetruWorkout)",
+    "Para el pino a una mano: 5 flexiones de pino libres (PetruWorkout)"
+   ]
+  },
+  {
+   "id": "hspu_palmada",
+   "nombre": "Flexión de pino con palmada",
+   "alias": [],
+   "escalera": "empuje_vertical",
+   "orden": 11,
+   "tipo": "repes",
+   "objetivo": "potencia",
+   "material": [
+    "suelo"
+   ],
+   "cues": [],
+   "errores": [],
+   "notas": "Para llegar aquí el autor recomienda flexiones de pino todos los días salvo uno",
+   "fuentes": [
+    "petru-flexiones@26:04",
+    "petru-niveles-flexiones@7:29"
+   ],
+   "criterios": []
+  },
+  {
+   "id": "lean_planche",
+   "nombre": "Lean planche (estático)",
+   "alias": [],
+   "escalera": "plancha",
+   "orden": 1,
+   "tipo": "segundos",
+   "objetivo": "skill",
+   "material": [
+    "suelo"
+   ],
+   "cues": [
+    "Brazos estirados, hombros por delante de las manos",
+    "Protracción escapular (joroba arriba), pecho hundido",
+    "Depresión de hombros, pecho activo; inclínate empujando hacia arriba"
+   ],
+   "errores": [],
+   "notas": "El autor recomienda practicar mucho la posición antes de la flexión",
+   "fuentes": [
+    "petru-flexiones@28:36",
+    "bruno-full-planche@1:08"
+   ],
+   "criterios": [
+    "15 s de lean planche para pasar a tuck planche; si es fácil, pies elevados (Bruno Focacci)"
+   ]
+  },
+  {
+   "id": "flex_lean_planche",
+   "nombre": "Flexión lean planche (pseudoplancha)",
+   "alias": [],
+   "escalera": "plancha",
+   "orden": 2,
+   "tipo": "repes",
+   "objetivo": "fuerza",
+   "material": [
+    "suelo"
+   ],
+   "cues": [
+    "Manos a la altura de la cadera, hombros adelantados",
+    "Mantener la protracción",
+    "Codos hacia atrás pegados al cuerpo, nunca abiertos hacia los lados",
+    "Gira las muñecas para que queden laterales",
+    "Primero aguanta arriba con brazos rectos practicando hundir el pecho",
+    "Hombros lejos de las orejas",
+    "La subida va hacia delante, hacia la palanca"
+   ],
+   "errores": [],
+   "notas": "Cuanto más cerca de la cadera las manos, más carga en hombros",
+   "fuentes": [
+    "petru-flexiones@29:20",
+    "petru-pino@6:12",
+    "bruno-full-planche@2:29"
+   ],
+   "criterios": []
+  },
+  {
+   "id": "flex_lean_planche_elevada",
+   "nombre": "Flexión lean planche pies elevados",
+   "alias": [],
+   "escalera": "plancha",
+   "orden": 3,
+   "tipo": "repes",
+   "objetivo": "fuerza",
+   "material": [
+    "superficie elevada"
+   ],
+   "cues": [],
+   "errores": [],
+   "notas": null,
+   "fuentes": [
+    "petru-flexiones@29:56"
+   ],
+   "criterios": []
+  },
+  {
+   "id": "flex_lean_planche_deficit",
+   "nombre": "Flexión lean planche con déficit",
+   "alias": [],
+   "escalera": "plancha",
+   "orden": 4,
+   "tipo": "repes",
+   "objetivo": "fuerza",
+   "material": [
+    "dos apoyos elevados"
+   ],
+   "cues": [],
+   "errores": [],
+   "notas": null,
+   "fuentes": [
+    "petru-flexiones@30:10"
+   ],
+   "criterios": [
+    "Solo cuando la versión estándar sea cómoda y controlada"
+   ]
+  },
+  {
+   "id": "flex_tuck_planche",
+   "nombre": "Flexión tuck planche",
+   "alias": [],
+   "escalera": "plancha",
+   "orden": 5,
+   "tipo": "repes",
+   "objetivo": "fuerza",
+   "material": [
+    "paralelas bajas (recomendable)"
+   ],
+   "cues": [
+    "Rodillas al pecho, pies en el aire, hombros adelantados"
+   ],
+   "errores": [],
+   "notas": null,
+   "fuentes": [
+    "petru-flexiones@30:29",
+    "bruno-full-planche@7:02"
+   ],
+   "criterios": [
+    "Antes: mantener la tuck planche estática al menos ~5 s",
+    "Empezar cuando el tuck es sólido (15 s) (Bruno Focacci)"
+   ]
+  },
+  {
+   "id": "flex_adv_tuck_planche",
+   "nombre": "Flexión advanced tuck planche",
+   "alias": [],
+   "escalera": "plancha",
+   "orden": 6,
+   "tipo": "repes",
+   "objetivo": "fuerza",
+   "material": [
+    "suelo"
+   ],
+   "cues": [
+    "Rodillas más separadas del pecho, cuerpo más horizontal"
+   ],
+   "errores": [],
+   "notas": null,
+   "fuentes": [
+    "petru-flexiones@31:10"
+   ],
+   "criterios": []
+  },
+  {
+   "id": "flex_straddle_planche",
+   "nombre": "Flexión straddle planche",
+   "alias": [],
+   "escalera": "plancha",
+   "orden": 7,
+   "tipo": "repes",
+   "objetivo": "fuerza",
+   "material": [
+    "suelo"
+   ],
+   "cues": [
+    "Piernas estiradas y abiertas en V"
+   ],
+   "errores": [],
+   "notas": "El autor la muestra con goma",
+   "fuentes": [
+    "petru-flexiones@31:29",
+    "petru-niveles-flexiones@7:47"
+   ],
+   "criterios": []
+  },
+  {
+   "id": "flex_full_planche",
+   "nombre": "Flexión full planche",
+   "alias": [],
+   "escalera": "plancha",
+   "orden": 8,
+   "tipo": "repes",
+   "objetivo": "fuerza",
+   "material": [
+    "suelo"
+   ],
+   "cues": [
+    "Piernas juntas, cuerpo horizontal"
+   ],
+   "errores": [],
+   "notas": null,
+   "fuentes": [
+    "petru-flexiones@31:58"
+   ],
+   "criterios": []
+  },
+  {
+   "id": "flex_pino_90",
+   "nombre": "Flexión de pino a 90º (90º push-up)",
+   "alias": [],
+   "escalera": "elite",
+   "orden": 1,
+   "tipo": "repes",
+   "objetivo": "skill",
+   "material": [
+    "suelo"
+   ],
+   "cues": [],
+   "errores": [],
+   "notas": "Se consigue con muchísimas flexiones de pino y mucha plancha abdominal",
+   "fuentes": [
+    "petru-flexiones@32:40",
+    "petru-pino@4:11"
+   ],
+   "criterios": []
+  },
+  {
+   "id": "flex_maltese",
+   "nombre": "Flexión maltese",
+   "alias": [],
+   "escalera": "elite",
+   "orden": 2,
+   "tipo": "repes",
+   "objetivo": "skill",
+   "material": [
+    "suelo"
+   ],
+   "cues": [],
+   "errores": [],
+   "notas": "Recomendado adaptarse con goma",
+   "fuentes": [
+    "petru-flexiones@33:04"
+   ],
+   "criterios": []
+  },
+  {
+   "id": "plancha_una_mano",
+   "nombre": "Plancha a una mano",
+   "alias": [],
+   "escalera": "elite",
+   "orden": 3,
+   "tipo": "segundos",
+   "objetivo": "skill",
+   "material": [
+    "suelo"
+   ],
+   "cues": [],
+   "errores": [],
+   "notas": null,
+   "fuentes": [
+    "petru-flexiones@33:29"
+   ],
+   "criterios": []
+  },
+  {
+   "id": "flex_una_mano_negativa",
+   "nombre": "Flexión a una mano negativa",
+   "alias": [],
+   "escalera": "camino_una_mano",
+   "orden": 8,
+   "tipo": "negativa",
+   "objetivo": "fuerza",
+   "material": [
+    "suelo"
+   ],
+   "cues": [
+    "Solo la bajada, apretando fuerte; vuelve arriba con ayuda"
+   ],
+   "errores": [],
+   "notas": null,
+   "fuentes": [
+    "petru-niveles-flexiones@5:53"
+   ],
+   "criterios": []
+  },
+  {
+   "id": "flex_hindu",
+   "nombre": "Flexión hindú",
+   "alias": [],
+   "escalera": null,
+   "orden": null,
+   "tipo": "repes",
+   "objetivo": "fuerza",
+   "material": [
+    "suelo"
+   ],
+   "cues": [
+    "Empieza en pica, baja y estira los brazos, vuelve a subir manteniendo la pica"
+   ],
+   "errores": [],
+   "notas": "Hombro, brazos y abdomen; para quien ya tiene fuerza",
+   "fuentes": [
+    "petru-pino@7:39"
+   ],
+   "criterios": []
+  },
+  {
+   "id": "pino_paralelas_hombros",
+   "nombre": "Pino con hombros apoyados en paralelas",
+   "alias": [],
+   "escalera": "pino_equilibrio",
+   "orden": 1,
+   "tipo": "segundos",
+   "objetivo": "fuerza",
+   "material": [
+    "paralelas"
+   ],
+   "cues": [
+    "Hombros sobre una barra, manos agarrando la otra; sube las piernas poco a poco"
+   ],
+   "errores": [],
+   "notas": "El pino más fácil: no te puedes caer hacia delante",
+   "fuentes": [
+    "petru-pino@2:39"
+   ],
+   "criterios": []
+  },
+  {
+   "id": "pino_pared_caminando",
+   "nombre": "Pino caminando por la pared (pecho a la pared)",
+   "alias": [],
+   "escalera": "pino_equilibrio",
+   "orden": 2,
+   "tipo": "segundos",
+   "objetivo": "fuerza",
+   "material": [
+    "pared"
+   ],
+   "cues": [
+    "Desde posición de flexión, sube los pies por la pared hasta donde te sientas seguro y aguanta"
+   ],
+   "errores": [],
+   "notas": "El autor lo recomienda primero porque quita el miedo",
+   "fuentes": [
+    "petru-pino@2:13",
+    "petru-10-habilidades@4:49",
+    "petru-10-ejercicios@4:57"
+   ],
+   "criterios": []
+  },
+  {
+   "id": "pino_pared_espaldas",
+   "nombre": "Pino de espaldas a la pared (patada)",
+   "alias": [],
+   "escalera": "pino_equilibrio",
+   "orden": 3,
+   "tipo": "segundos",
+   "objetivo": "fuerza",
+   "material": [
+    "pared"
+   ],
+   "cues": [
+    "Patada y apoya los dos pies; cuando estés cómodo suelta uno",
+    "Céntrate en las manos y los dedos",
+    "Ve despegándote de la pared poco a poco"
+   ],
+   "errores": [],
+   "notas": "Hacia delante te protege la pared; hacia atrás caes de pie",
+   "fuentes": [
+    "petru-pino@1:48",
+    "petru-10-habilidades@5:30"
+   ],
+   "criterios": []
+  },
+  {
+   "id": "pino_libre",
+   "nombre": "Pino libre",
+   "alias": [],
+   "escalera": "pino_equilibrio",
+   "orden": 4,
+   "tipo": "segundos",
+   "objetivo": "skill",
+   "material": [
+    "suelo"
+   ],
+   "cues": [
+    "Dedos algo flexionados, agarrando el suelo: si te vas adelante, presiona con los dedos; si te vas atrás, relaja",
+    "Todo apretado: piernas estiradas, glúteos, abdomen, hombros empujando el suelo",
+    "Para salir: quita una mano y el cuerpo gira solo"
+   ],
+   "errores": [
+    "Posición banana (espalda arqueada): corrígela con movilidad de hombros y retroversión pélvica"
+   ],
+   "notas": null,
+   "fuentes": [
+    "petru-pino@0:00",
+    "petru-10-habilidades@4:44"
+   ],
+   "criterios": [
+    "Practícalo todos los días; los días de descanso, menos intentos pero no lo dejes (PetruWorkout)"
+   ]
+  },
+  {
+   "id": "pino_una_mano",
+   "nombre": "Pino a una mano",
+   "alias": [],
+   "escalera": "pino_equilibrio",
+   "orden": 5,
+   "tipo": "segundos",
+   "objetivo": "skill",
+   "material": [
+    "paralelas"
+   ],
+   "cues": [
+    "En paralelas es más sencillo",
+    "Estírate hacia arriba (extensión de hombros) y lleva el peso a un lado",
+    "Retira la mano poco a poco: agarre → dedos → dos dedos → uno",
+    "Aprieta fuerte la paralela para estabilizar",
+    "Piernas abiertas"
+   ],
+   "errores": [],
+   "notas": null,
+   "fuentes": [
+    "petru-pino@4:30",
+    "petru-10-habilidades@9:20"
+   ],
+   "criterios": [
+    "Requisitos: 30 s de pino con buena posición y 5 flexiones de pino libres (PetruWorkout)"
+   ]
+  },
+  {
+   "id": "rana",
+   "nombre": "Rana (apoyo de codos en muslos)",
+   "alias": [],
+   "escalera": "pino_fuerza",
+   "orden": 1,
+   "tipo": "segundos",
+   "objetivo": "skill",
+   "material": [
+    "suelo"
+   ],
+   "cues": [
+    "Codos en el interior de los muslos, flexiónalos un poco",
+    "Échate adelante, sube un pie y luego el otro"
+   ],
+   "errores": [],
+   "notas": null,
+   "fuentes": [
+    "petru-10-habilidades@2:11"
+   ],
+   "criterios": [
+    "Con 10 s pasas al enanito (PetruWorkout)"
+   ]
+  },
+  {
+   "id": "enanito",
+   "nombre": "Enanito (sin apoyar muslos en codos)",
+   "alias": [],
+   "escalera": "pino_fuerza",
+   "orden": 2,
+   "tipo": "segundos",
+   "objetivo": "skill",
+   "material": [
+    "suelo"
+   ],
+   "cues": [
+    "Baja un poco los codos e intenta subir los dos pies",
+    "Si cuesta, deja un pie en el suelo"
+   ],
+   "errores": [],
+   "notas": null,
+   "fuentes": [
+    "petru-10-habilidades@3:09"
+   ],
+   "criterios": []
+  },
+  {
+   "id": "pino_fuerza",
+   "nombre": "Subida a pino por fuerza (codos flexionados)",
+   "alias": [],
+   "escalera": "pino_fuerza",
+   "orden": 3,
+   "tipo": "repes",
+   "objetivo": "skill",
+   "material": [
+    "suelo"
+   ],
+   "cues": [
+    "Desde enanito, aguanta 2 s y sube a pino",
+    "También desde L-sit o en paralelas"
+   ],
+   "errores": [],
+   "notas": "Según Pedro Gadez va antes que cualquier trabajo de plancha: más natural y sano que empujar con codos estirados",
+   "fuentes": [
+    "petru-10-habilidades@7:46",
+    "pedro-tuck-press@1:20"
+   ],
+   "criterios": [
+    "Requisito: flexiones de pino en pared a 90º (PetruWorkout)"
+   ]
+  },
+  {
+   "id": "lean_pica",
+   "nombre": "Lean planche pike (subir la cadera por palanca)",
+   "alias": [],
+   "escalera": null,
+   "orden": null,
+   "tipo": "repes",
+   "objetivo": "fuerza",
+   "material": [
+    "suelo"
+   ],
+   "cues": [
+    "Desde lean planche, sube la cadera empujando solo con el hombro, sin ayudarte de los pies"
+   ],
+   "errores": [],
+   "notas": null,
+   "fuentes": [
+    "bruno-full-planche@2:59"
+   ],
+   "criterios": []
+  },
+  {
+   "id": "fondos_protraccion",
+   "nombre": "Fondos escapulares con protracción",
+   "alias": [],
+   "escalera": null,
+   "orden": null,
+   "tipo": "repes",
+   "objetivo": "fuerza",
+   "material": [
+    "paralelas"
+   ],
+   "cues": [],
+   "errores": [],
+   "notas": "Base para plancha",
+   "fuentes": [
+    "bruno-full-planche@4:39"
+   ],
+   "criterios": []
+  },
+  {
+   "id": "tuck_planche",
+   "nombre": "Tuck planche (aguante)",
+   "alias": [],
+   "escalera": "plancha_aguante",
+   "orden": 2,
+   "tipo": "segundos",
+   "objetivo": "skill",
+   "material": [
+    "paralelas"
+   ],
+   "cues": [
+    "Agarra fuerte, rodillas juntas al pecho, palanca de hombro como en el lean"
+   ],
+   "errores": [],
+   "notas": null,
+   "fuentes": [
+    "bruno-full-planche@5:30",
+    "pedro-tuck-press@2:05"
+   ],
+   "criterios": [
+    "15 s sólidos para pasar a advanced tuck y empezar flexiones en tuck (Bruno Focacci)"
+   ]
+  },
+  {
+   "id": "adv_tuck_planche",
+   "nombre": "Advanced tuck planche (aguante)",
+   "alias": [],
+   "escalera": "plancha_aguante",
+   "orden": 3,
+   "tipo": "segundos",
+   "objetivo": "skill",
+   "material": [
+    "paralelas"
+   ],
+   "cues": [
+    "Rodillas separadas del pecho, llevándolas hacia atrás"
+   ],
+   "errores": [],
+   "notas": null,
+   "fuentes": [
+    "bruno-full-planche@6:38"
+   ],
+   "criterios": [
+    "12–15 s para empezar la transición a straddle (Bruno Focacci)"
+   ]
+  },
+  {
+   "id": "tuck_press_negativa",
+   "nombre": "Negativa de press a tuck planche",
+   "alias": [],
+   "escalera": "press_plancha",
+   "orden": 1,
+   "tipo": "negativa",
+   "objetivo": "skill",
+   "material": [
+    "suelo"
+   ],
+   "cues": [
+    "Desde el pino, al bajar lleva las rodillas al pecho",
+    "No pienses en bajar: resiste con la palanca de hombro",
+    "Inclínate sin miedo, codos bloqueados; el peso va delante de la muñeca y luego atrás"
+   ],
+   "errores": [],
+   "notas": null,
+   "fuentes": [
+    "bruno-full-planche@7:55",
+    "pedro-tuck-press@2:51"
+   ],
+   "criterios": [
+    "4 de 4 sin fallar, lenta y aguantando 10 s abajo antes de intentar el press (Pedro Gadez)"
+   ]
+  },
+  {
+   "id": "tuck_press_goma",
+   "nombre": "Press a tuck planche con goma",
+   "alias": [],
+   "escalera": "press_plancha",
+   "orden": 2,
+   "tipo": "repes",
+   "objetivo": "skill",
+   "material": [
+    "goma elástica",
+    "paralelas"
+   ],
+   "cues": [],
+   "errores": [],
+   "notas": "La goma sirve para aprender el movimiento, no para construir la fuerza",
+   "fuentes": [
+    "pedro-tuck-press@7:38",
+    "bruno-full-planche@9:43"
+   ],
+   "criterios": [
+    "Una goma que te deje hacer 2–5 repeticiones (Bruno Focacci)"
+   ]
+  },
+  {
+   "id": "tuck_press_cadera_alta",
+   "nombre": "Press a pino desde tuck, cadera alta",
+   "alias": [],
+   "escalera": "press_plancha",
+   "orden": 3,
+   "tipo": "repes",
+   "objetivo": "skill",
+   "material": [
+    "suelo"
+   ],
+   "cues": [
+    "Cuanto más alta la cadera al empezar, más fácil"
+   ],
+   "errores": [],
+   "notas": null,
+   "fuentes": [
+    "pedro-tuck-press@4:58"
+   ],
+   "criterios": [
+    "4–6 series cómodas en cada altura antes de bajar la cadera (Pedro Gadez)"
+   ]
+  },
+  {
+   "id": "tuck_press",
+   "nombre": "Press a pino desde tuck planche (en el sitio)",
+   "alias": [],
+   "escalera": "press_plancha",
+   "orden": 4,
+   "tipo": "repes",
+   "objetivo": "skill",
+   "material": [
+    "suelo"
+   ],
+   "cues": [
+    "Peso delante y, mientras subes, llévalo atrás de la mano",
+    "Mete los hombros al final",
+    "Arriba frena con las muñecas; deja que la cadera se extienda sola",
+    "Serie útil: subida por fuerza + negativa a tuck"
+   ],
+   "errores": [
+    "Dejar el hombro adelantado y quedarse atascado",
+    "Doblar el codo por miedo a caer de cabeza"
+   ],
+   "notas": null,
+   "fuentes": [
+    "pedro-tuck-press@5:25",
+    "bruno-full-planche@9:33"
+   ],
+   "criterios": []
+  },
+  {
+   "id": "straddle_planche_goma",
+   "nombre": "Straddle planche con goma",
+   "alias": [],
+   "escalera": "plancha_aguante",
+   "orden": 4,
+   "tipo": "segundos",
+   "objetivo": "skill",
+   "material": [
+    "goma elástica",
+    "paralelas"
+   ],
+   "cues": [],
+   "errores": [],
+   "notas": null,
+   "fuentes": [
+    "bruno-full-planche@12:48"
+   ],
+   "criterios": [
+    "Goma que te deje aguantar 5–7 s con esfuerzo (Bruno Focacci)"
+   ]
+  },
+  {
+   "id": "straddle_negativa",
+   "nombre": "Negativa de pino a straddle planche",
+   "alias": [],
+   "escalera": null,
+   "orden": null,
+   "tipo": "negativa",
+   "objetivo": "skill",
+   "material": [
+    "suelo"
+   ],
+   "cues": [],
+   "errores": [],
+   "notas": null,
+   "fuentes": [
+    "bruno-full-planche@12:00"
+   ],
+   "criterios": []
+  },
+  {
+   "id": "straddle_planche",
+   "nombre": "Straddle planche (aguante)",
+   "alias": [],
+   "escalera": "plancha_aguante",
+   "orden": 5,
+   "tipo": "segundos",
+   "objetivo": "skill",
+   "material": [
+    "suelo"
+   ],
+   "cues": [],
+   "errores": [],
+   "notas": null,
+   "fuentes": [
+    "bruno-full-planche@13:11"
+   ],
+   "criterios": [
+    "~10 s para ir a por straddle press y flexiones en straddle (negativa primero, 3–5 s, 2–3 repes) (Bruno Focacci)"
+   ]
+  },
+  {
+   "id": "half_lay_planche",
+   "nombre": "Half lay planche (aguante)",
+   "alias": [],
+   "escalera": "plancha_aguante",
+   "orden": 6,
+   "tipo": "segundos",
+   "objetivo": "skill",
+   "material": [
+    "suelo"
+   ],
+   "cues": [],
+   "errores": [],
+   "notas": null,
+   "fuentes": [
+    "bruno-full-planche@13:37"
+   ],
+   "criterios": [
+    "7–10 s para empezar intentos de full planche (Bruno Focacci)"
+   ]
+  },
+  {
+   "id": "full_planche",
+   "nombre": "Full planche (aguante)",
+   "alias": [],
+   "escalera": "plancha_aguante",
+   "orden": 7,
+   "tipo": "segundos",
+   "objetivo": "skill",
+   "material": [
+    "suelo"
+   ],
+   "cues": [],
+   "errores": [],
+   "notas": "Trabajo de acercamiento: lanzadas, elevaciones desde lean, negativas desde pino y aguantes con goma al final",
+   "fuentes": [
+    "bruno-full-planche@16:33"
+   ],
+   "criterios": []
+  },
+  {
+   "id": "colgado_barra",
+   "nombre": "Colgarse de la barra",
+   "alias": [],
+   "escalera": "dominada_base",
+   "orden": 1,
+   "tipo": "segundos",
+   "objetivo": "fuerza",
+   "material": [
+    "barra"
+   ],
+   "cues": [],
+   "errores": [],
+   "notas": null,
+   "fuentes": [
+    "petru-10-habilidades@0:26",
+    "petru-niveles-dominadas@0:33"
+   ],
+   "criterios": [
+    "Requisito antes de empezar: 20 s (PetruWorkout)"
+   ]
+  },
+  {
+   "id": "plancha_abdominal",
+   "nombre": "Plancha abdominal",
+   "alias": [],
+   "escalera": "core_suelo",
+   "orden": 1,
+   "tipo": "segundos",
+   "objetivo": "core",
+   "material": [
+    "suelo"
+   ],
+   "cues": [
+    "Cadera ni arriba ni abajo: línea recta"
+   ],
+   "errores": [
+    "Hundir la zona lumbar o subir la cadera"
+   ],
+   "notas": "Calidad antes que duración",
+   "fuentes": [
+    "petru-10-habilidades@0:46",
+    "petru-10-ejercicios@5:33"
+   ],
+   "criterios": [
+    "Requisito antes de empezar: 30 s estrictos (PetruWorkout)"
+   ]
+  },
+  {
+   "id": "plancha_lateral",
+   "nombre": "Plancha lateral",
+   "alias": [],
+   "escalera": null,
+   "orden": null,
+   "tipo": "segundos",
+   "objetivo": "core",
+   "material": [
+    "suelo"
+   ],
+   "cues": [],
+   "errores": [],
+   "notas": null,
+   "fuentes": [
+    "petru-10-habilidades@11:24"
+   ],
+   "criterios": []
+  },
+  {
+   "id": "remo_australiano_rodillas",
+   "nombre": "Remo australiano con rodillas flexionadas",
+   "alias": [],
+   "escalera": "remo",
+   "orden": 1,
+   "tipo": "repes",
+   "objetivo": "fuerza",
+   "material": [
+    "barra baja"
+   ],
+   "cues": [],
+   "errores": [],
+   "notas": null,
+   "fuentes": [
+    "petru-niveles-dominadas@1:35"
+   ],
+   "criterios": []
+  },
+  {
+   "id": "remo_australiano",
+   "nombre": "Remo australiano",
+   "alias": [],
+   "escalera": "remo",
+   "orden": 2,
+   "tipo": "repes",
+   "objetivo": "fuerza",
+   "material": [
+    "barra baja"
+   ],
+   "cues": [
+    "Brazos totalmente estirados abajo; pecho a la barra arriba",
+    "Barra más alta = más fácil; inclínate más para endurecerlo",
+    "Cuanto más horizontal, más duro"
+   ],
+   "errores": [],
+   "notas": null,
+   "fuentes": [
+    "petru-niveles-dominadas@1:02",
+    "petru-10-ejercicios@1:37",
+    "petru-10-habilidades@1:08"
+   ],
+   "criterios": []
+  },
+  {
+   "id": "remo_australiano_horizontal",
+   "nombre": "Remo australiano horizontal (barra baja)",
+   "alias": [],
+   "escalera": "remo",
+   "orden": 3,
+   "tipo": "repes",
+   "objetivo": "fuerza",
+   "material": [
+    "barra baja"
+   ],
+   "cues": [],
+   "errores": [],
+   "notas": null,
+   "fuentes": [
+    "petru-10-ejercicios@2:01"
+   ],
+   "criterios": []
+  },
+  {
+   "id": "remo_arquero",
+   "nombre": "Remo arquero",
+   "alias": [],
+   "escalera": "remo",
+   "orden": 4,
+   "tipo": "repes",
+   "objetivo": "fuerza",
+   "material": [
+    "barra baja"
+   ],
+   "cues": [],
+   "errores": [],
+   "notas": null,
+   "fuentes": [
+    "petru-10-ejercicios@2:05"
+   ],
+   "criterios": []
+  },
+  {
+   "id": "remo_un_brazo",
+   "nombre": "Remo a un brazo",
+   "alias": [],
+   "escalera": "remo",
+   "orden": 5,
+   "tipo": "repes",
+   "objetivo": "fuerza",
+   "material": [
+    "barra baja"
+   ],
+   "cues": [],
+   "errores": [],
+   "notas": null,
+   "fuentes": [
+    "petru-10-ejercicios@2:05"
+   ],
+   "criterios": []
+  },
+  {
+   "id": "dominada_isometrico_mitad",
+   "nombre": "Aguante en la mitad de la dominada",
+   "alias": [],
+   "escalera": "dominada_base",
+   "orden": 2,
+   "tipo": "segundos",
+   "objetivo": "fuerza",
+   "material": [
+    "barra"
+   ],
+   "cues": [],
+   "errores": [],
+   "notas": null,
+   "fuentes": [
+    "petru-niveles-dominadas@2:01"
+   ],
+   "criterios": [
+    "10 s para pasar a negativas (PetruWorkout)"
+   ]
+  },
+  {
+   "id": "dominada_negativa",
+   "nombre": "Negativa de dominada",
+   "alias": [],
+   "escalera": "dominada_base",
+   "orden": 3,
+   "tipo": "negativa",
+   "objetivo": "fuerza",
+   "material": [
+    "barra"
+   ],
+   "cues": [],
+   "errores": [],
+   "notas": "El autor la señala como el ejercicio más importante de la escalera",
+   "fuentes": [
+    "petru-niveles-dominadas@2:42"
+   ],
+   "criterios": []
+  },
+  {
+   "id": "dominada_negativa_pausas",
+   "nombre": "Negativa con pausas (5 s arriba, medio, abajo)",
+   "alias": [],
+   "escalera": "dominada_base",
+   "orden": 4,
+   "tipo": "negativa",
+   "objetivo": "fuerza",
+   "material": [
+    "barra"
+   ],
+   "cues": [],
+   "errores": [],
+   "notas": null,
+   "fuentes": [
+    "petru-niveles-dominadas@3:04"
+   ],
+   "criterios": []
+  },
+  {
+   "id": "dominada",
+   "nombre": "Dominada",
+   "alias": [],
+   "escalera": "dominada_base",
+   "orden": 5,
+   "tipo": "repes",
+   "objetivo": "fuerza",
+   "material": [
+    "barra"
+   ],
+   "cues": [
+    "Brazos completamente estirados abajo, barbilla por encima de la barra, bajada lenta"
+   ],
+   "errores": [],
+   "notas": "Ejemplo de principiante: 3–5 series de 2–5, completando con negativas",
+   "fuentes": [
+    "petru-niveles-dominadas@3:25",
+    "petru-10-ejercicios@0:36",
+    "domein-rutina@6:28"
+   ],
+   "criterios": [
+    "Con 1–5, perfecciona la técnica; con 10 seguidas × 3 series, pasa a explosivas (PetruWorkout)",
+    "Con 15 limpias, progresa a variantes en vez de sumar repeticiones (PetruWorkout)"
+   ]
+  },
+  {
+   "id": "dominada_explosiva",
+   "nombre": "Dominada explosiva (pecho a la barra)",
+   "alias": [],
+   "escalera": "tiron_explosivo",
+   "orden": 1,
+   "tipo": "repes",
+   "objetivo": "fuerza",
+   "material": [
+    "barra"
+   ],
+   "cues": [
+    "Sube lo más alto posible; objetivo, el pecho toca la barra",
+    "Si solo salen 3–4 buenas, sigue con normales con intención de subir",
+    "Menos repeticiones, más intensas"
+   ],
+   "errores": [],
+   "notas": null,
+   "fuentes": [
+    "petru-niveles-dominadas@5:00",
+    "eryc-5-hacks@0:50",
+    "alge-volumen@7:11"
+   ],
+   "criterios": [
+    "Series de 3–4 repeticiones; para cuando pierdas velocidad o altura (algecalistenia)"
+   ]
+  },
+  {
+   "id": "muscle_up",
+   "nombre": "Muscle up",
+   "alias": [],
+   "escalera": "tiron_explosivo",
+   "orden": 2,
+   "tipo": "repes",
+   "objetivo": "skill",
+   "material": [
+    "barra"
+   ],
+   "cues": [
+    "Aléjate de la barra para poder meter la cabeza arriba"
+   ],
+   "errores": [],
+   "notas": null,
+   "fuentes": [
+    "petru-niveles-dominadas@5:30",
+    "petru-10-habilidades@7:18"
+   ],
+   "criterios": [
+    "Mínimo 5 repeticiones con buena técnica (PetruWorkout)",
+    "Con 10 dominadas sin esfuerzo ya puedes trabajar explosivas y muscle up (PetruWorkout)"
+   ]
+  },
+  {
+   "id": "dominada_abdomen",
+   "nombre": "Dominada alta (abdomen a la barra)",
+   "alias": [],
+   "escalera": "tiron_explosivo",
+   "orden": 3,
+   "tipo": "repes",
+   "objetivo": "fuerza",
+   "material": [
+    "barra"
+   ],
+   "cues": [],
+   "errores": [],
+   "notas": null,
+   "fuentes": [
+    "eryc-5-hacks@1:37"
+   ],
+   "criterios": []
+  },
+  {
+   "id": "dominada_cadera",
+   "nombre": "Dominada a la cadera",
+   "alias": [],
+   "escalera": "tiron_explosivo",
+   "orden": 4,
+   "tipo": "repes",
+   "objetivo": "potencia",
+   "material": [
+    "barra"
+   ],
+   "cues": [],
+   "errores": [],
+   "notas": null,
+   "fuentes": [
+    "eryc-5-hacks@2:03",
+    "petru-niveles-dominadas@6:31"
+   ],
+   "criterios": []
+  },
+  {
+   "id": "dominada_l",
+   "nombre": "Dominada en L",
+   "alias": [],
+   "escalera": "tiron_volumen",
+   "orden": 2,
+   "tipo": "repes",
+   "objetivo": "fuerza",
+   "material": [
+    "barra"
+   ],
+   "cues": [
+    "Abdomen firme: el cuerpo entero como una pieza"
+   ],
+   "errores": [],
+   "notas": null,
+   "fuentes": [
+    "petru-niveles-dominadas@6:08"
+   ],
+   "criterios": []
+  },
+  {
+   "id": "dominada_lastrada",
+   "nombre": "Dominada lastrada",
+   "alias": [],
+   "escalera": "dominada_lastre",
+   "orden": 1,
+   "tipo": "repes",
+   "objetivo": "fuerza",
+   "material": [
+    "barra",
+    "mochila con peso"
+   ],
+   "cues": [],
+   "errores": [],
+   "notas": "El autor pone 50–60 kg como meta de nivel 10. El sistema de subir de kilos en kilos es del tracker, no de las fuentes",
+   "fuentes": [
+    "petru-niveles-dominadas@6:31"
+   ],
+   "criterios": []
+  },
+  {
+   "id": "aguante_una_mano",
+   "nombre": "Aguante a una mano en la mitad",
+   "alias": [],
+   "escalera": "tiron_una_mano",
+   "orden": 1,
+   "tipo": "segundos",
+   "objetivo": "fuerza",
+   "material": [
+    "barra"
+   ],
+   "cues": [
+    "Sube a la mitad, suelta un brazo y aguanta; luego el otro"
+   ],
+   "errores": [],
+   "notas": null,
+   "fuentes": [
+    "petru-niveles-dominadas@6:55"
+   ],
+   "criterios": []
+  },
+  {
+   "id": "negativa_una_mano",
+   "nombre": "Negativa de dominada a una mano",
+   "alias": [],
+   "escalera": "tiron_una_mano",
+   "orden": 2,
+   "tipo": "negativa",
+   "objetivo": "fuerza",
+   "material": [
+    "barra"
+   ],
+   "cues": [
+    "Barbilla sobre la barra con un brazo y baja lento",
+    "Ambos brazos por igual; no dejes las dominadas a dos brazos"
+   ],
+   "errores": [],
+   "notas": null,
+   "fuentes": [
+    "petru-niveles-dominadas@7:20",
+    "petru-10-habilidades@12:22"
+   ],
+   "criterios": []
+  },
+  {
+   "id": "dominada_una_mano_asistida",
+   "nombre": "Dominada a una mano asistida (goma o apoyo)",
+   "alias": [],
+   "escalera": "tiron_una_mano",
+   "orden": 3,
+   "tipo": "repes",
+   "objetivo": "fuerza",
+   "material": [
+    "barra",
+    "goma elástica"
+   ],
+   "cues": [],
+   "errores": [],
+   "notas": null,
+   "fuentes": [
+    "petru-10-habilidades@12:22"
+   ],
+   "criterios": []
+  },
+  {
+   "id": "dominada_una_mano",
+   "nombre": "Dominada a una mano",
+   "alias": [],
+   "escalera": "tiron_una_mano",
+   "orden": 4,
+   "tipo": "repes",
+   "objetivo": "fuerza",
+   "material": [
+    "barra"
+   ],
+   "cues": [],
+   "errores": [
+    "Quedarse a mitad de recorrido"
+   ],
+   "notas": null,
+   "fuentes": [
+    "petru-10-habilidades@12:00"
+   ],
+   "criterios": []
+  },
+  {
+   "id": "aguante_barbilla",
+   "nombre": "Aguante con la barbilla sobre la barra",
+   "alias": [],
+   "escalera": null,
+   "orden": null,
+   "tipo": "segundos",
+   "objetivo": "fuerza",
+   "material": [
+    "barra"
+   ],
+   "cues": [],
+   "errores": [],
+   "notas": "Prepara el pull over",
+   "fuentes": [
+    "petru-10-habilidades@6:50"
+   ],
+   "criterios": []
+  },
+  {
+   "id": "pull_over",
+   "nombre": "Pull over",
+   "alias": [],
+   "escalera": null,
+   "orden": null,
+   "tipo": "repes",
+   "objetivo": "skill",
+   "material": [
+    "barra"
+   ],
+   "cues": [],
+   "errores": [],
+   "notas": null,
+   "fuentes": [
+    "petru-10-habilidades@6:50"
+   ],
+   "criterios": []
+  },
+  {
+   "id": "skin_the_cat",
+   "nombre": "Skin the cat",
+   "alias": [],
+   "escalera": "back_lever",
+   "orden": 1,
+   "tipo": "repes",
+   "objetivo": "skill",
+   "material": [
+    "barra"
+   ],
+   "cues": [],
+   "errores": [],
+   "notas": null,
+   "fuentes": [
+    "petru-10-habilidades@10:43"
+   ],
+   "criterios": []
+  },
+  {
+   "id": "back_lever",
+   "nombre": "Back lever",
+   "alias": [],
+   "escalera": "back_lever",
+   "orden": 2,
+   "tipo": "segundos",
+   "objetivo": "skill",
+   "material": [
+    "barra"
+   ],
+   "cues": [
+    "Manos juntas",
+    "Empieza arriba y baja poco a poco hasta la horizontal"
+   ],
+   "errores": [],
+   "notas": "Requiere tríceps: muchos fondos",
+   "fuentes": [
+    "petru-10-habilidades@10:23"
+   ],
+   "criterios": []
+  },
+  {
+   "id": "fl_tuck",
+   "nombre": "Tuck front lever",
+   "alias": [],
+   "escalera": "front_lever",
+   "orden": 1,
+   "tipo": "segundos",
+   "objetivo": "skill",
+   "material": [
+    "barra"
+   ],
+   "cues": [
+    "Rodillas pegadas al pecho"
+   ],
+   "errores": [],
+   "notas": null,
+   "fuentes": [
+    "petru-10-habilidades@12:55"
+   ],
+   "criterios": []
+  },
+  {
+   "id": "fl_adv_tuck",
+   "nombre": "Advanced tuck front lever",
+   "alias": [],
+   "escalera": "front_lever",
+   "orden": 2,
+   "tipo": "segundos",
+   "objetivo": "skill",
+   "material": [
+    "barra"
+   ],
+   "cues": [
+    "Aleja las rodillas del pecho poco a poco"
+   ],
+   "errores": [],
+   "notas": null,
+   "fuentes": [
+    "petru-10-habilidades@13:25"
+   ],
+   "criterios": []
+  },
+  {
+   "id": "fl_goma",
+   "nombre": "Front lever con goma",
+   "alias": [],
+   "escalera": "front_lever",
+   "orden": 3,
+   "tipo": "segundos",
+   "objetivo": "skill",
+   "material": [
+    "barra",
+    "goma elástica"
+   ],
+   "cues": [],
+   "errores": [],
+   "notas": null,
+   "fuentes": [
+    "petru-10-habilidades@13:25"
+   ],
+   "criterios": []
+  },
+  {
+   "id": "elevacion_rodillas",
+   "nombre": "Elevación de rodillas colgado",
+   "alias": [],
+   "escalera": "core_colgado",
+   "orden": 1,
+   "tipo": "repes",
+   "objetivo": "core",
+   "material": [
+    "barra"
+   ],
+   "cues": [],
+   "errores": [],
+   "notas": "Ayuda al L-sit",
+   "fuentes": [
+    "petru-10-habilidades@3:46"
+   ],
+   "criterios": []
+  },
+  {
+   "id": "elevacion_piernas_suelo",
+   "nombre": "Elevación de piernas en el suelo",
+   "alias": [],
+   "escalera": "core_suelo",
+   "orden": 2,
+   "tipo": "repes",
+   "objetivo": "core",
+   "material": [
+    "suelo"
+   ],
+   "cues": [
+    "Baja lento, controlando"
+   ],
+   "errores": [],
+   "notas": null,
+   "fuentes": [
+    "petru-10-ejercicios@6:19",
+    "eryc-5-hacks@3:22"
+   ],
+   "criterios": []
+  },
+  {
+   "id": "candlestick",
+   "nombre": "Elevación de piernas con cadera arriba (candlestick)",
+   "alias": [],
+   "escalera": "core_suelo",
+   "orden": 3,
+   "tipo": "repes",
+   "objetivo": "core",
+   "material": [
+    "suelo"
+   ],
+   "cues": [
+    "Tras subir las piernas, lleva la cadera arriba activando dorsales, lumbares y abdomen"
+   ],
+   "errores": [],
+   "notas": "Según el autor ayuda al front lever",
+   "fuentes": [
+    "eryc-5-hacks@3:47"
+   ],
+   "criterios": []
+  },
+  {
+   "id": "elevacion_piernas_colgado",
+   "nombre": "Elevación de piernas colgado",
+   "alias": [],
+   "escalera": "core_colgado",
+   "orden": 2,
+   "tipo": "repes",
+   "objetivo": "core",
+   "material": [
+    "barra"
+   ],
+   "cues": [],
+   "errores": [],
+   "notas": null,
+   "fuentes": [
+    "petru-10-ejercicios@6:32"
+   ],
+   "criterios": []
+  },
+  {
+   "id": "toes_to_bar",
+   "nombre": "Pies a la barra (toes to bar)",
+   "alias": [],
+   "escalera": "core_colgado",
+   "orden": 3,
+   "tipo": "repes",
+   "objetivo": "core",
+   "material": [
+    "barra"
+   ],
+   "cues": [],
+   "errores": [],
+   "notas": null,
+   "fuentes": [
+    "petru-10-ejercicios@6:40"
+   ],
+   "criterios": []
+  },
+  {
+   "id": "lsit_tuck",
+   "nombre": "Tuck L-sit (rodillas flexionadas)",
+   "alias": [],
+   "escalera": "lsit",
+   "orden": 1,
+   "tipo": "segundos",
+   "objetivo": "core",
+   "material": [
+    "paralelas"
+   ],
+   "cues": [],
+   "errores": [],
+   "notas": null,
+   "fuentes": [
+    "petru-10-habilidades@3:38"
+   ],
+   "criterios": [
+    "Aguanta lo máximo; con 20–30 s, si las piernas no se estiran, añade movilidad (PetruWorkout)"
+   ]
+  },
+  {
+   "id": "lsit",
+   "nombre": "L-sit",
+   "alias": [],
+   "escalera": "lsit",
+   "orden": 2,
+   "tipo": "segundos",
+   "objetivo": "core",
+   "material": [
+    "paralelas"
+   ],
+   "cues": [],
+   "errores": [],
+   "notas": "Subir y mantener las piernas depende más de la fuerza de abdomen que de la flexibilidad",
+   "fuentes": [
+    "petru-10-habilidades@4:07"
+   ],
+   "criterios": []
+  },
+  {
+   "id": "hollow_body",
+   "nombre": "Aguante hollow body",
+   "alias": [],
+   "escalera": null,
+   "orden": null,
+   "tipo": "segundos",
+   "objetivo": "core",
+   "material": [
+    "suelo"
+   ],
+   "cues": [],
+   "errores": [],
+   "notas": "Recomendado en la preparación",
+   "fuentes": [
+    "domein-rutina@4:06"
+   ],
+   "criterios": []
+  },
+  {
+   "id": "fondos",
+   "nombre": "Fondos en paralelas",
+   "alias": [],
+   "escalera": "fondos",
+   "orden": 1,
+   "tipo": "repes",
+   "objetivo": "fuerza",
+   "material": [
+    "paralelas"
+   ],
+   "cues": [
+    "Principiantes: codo por encima de 90º",
+    "Con pequeños cambios enfatizas pecho o tríceps",
+    "Pecho hacia dentro y hombros hacia atrás y abajo (depresión escapular)",
+    "Inclínate un poco; si pierdes la posición abajo, reactívala arriba"
+   ],
+   "errores": [
+    "Bajar demasiado o abrir mucho los codos (irrita el hombro)"
+   ],
+   "notas": "Según Eryc Ortiz, esta versión ayuda a la plancha",
+   "fuentes": [
+    "petru-10-ejercicios@2:58",
+    "eryc-5-hacks@2:28",
+    "bruno-full-planche@0:02"
+   ],
+   "criterios": [
+    "Base antes de entrenar plancha: 20–25 fondos y 30 flexiones (Bruno Focacci)"
+   ]
+  },
+  {
+   "id": "fondos_rusos",
+   "nombre": "Fondos rusos",
+   "alias": [],
+   "escalera": "fondos",
+   "orden": 2,
+   "tipo": "repes",
+   "objetivo": "fuerza",
+   "material": [
+    "paralelas"
+   ],
+   "cues": [],
+   "errores": [],
+   "notas": null,
+   "fuentes": [
+    "petru-10-habilidades@1:58"
+   ],
+   "criterios": []
+  },
+  {
+   "id": "fondos_lastrados",
+   "nombre": "Fondos lastrados",
+   "alias": [],
+   "escalera": "fondos_lastre",
+   "orden": 1,
+   "tipo": "repes",
+   "objetivo": "fuerza",
+   "material": [
+    "paralelas",
+    "mochila con peso"
+   ],
+   "cues": [],
+   "errores": [],
+   "notas": "El lastre es el método del tracker; las fuentes solo piden muchos fondos",
+   "fuentes": [
+    "petru-10-ejercicios@2:58"
+   ],
+   "criterios": []
+  },
+  {
+   "id": "sentadilla",
+   "nombre": "Sentadilla con peso corporal",
+   "alias": [],
+   "escalera": null,
+   "orden": null,
+   "tipo": "repes",
+   "objetivo": "pierna",
+   "material": [
+    "suelo"
+   ],
+   "cues": [
+    "Espalda recta, bajada lenta"
+   ],
+   "errores": [],
+   "notas": "Alternativa si duelen las articulaciones: sentadilla isométrica en la pared",
+   "fuentes": [
+    "petru-10-ejercicios@7:43"
+   ],
+   "criterios": []
+  },
+  {
+   "id": "sentadilla_pared",
+   "nombre": "Sentadilla isométrica en la pared",
+   "alias": [],
+   "escalera": null,
+   "orden": null,
+   "tipo": "segundos",
+   "objetivo": "pierna",
+   "material": [
+    "suelo"
+   ],
+   "cues": [],
+   "errores": [],
+   "notas": null,
+   "fuentes": [
+    "petru-10-ejercicios@8:00"
+   ],
+   "criterios": []
+  },
+  {
+   "id": "burpee",
+   "nombre": "Burpee",
+   "alias": [],
+   "escalera": null,
+   "orden": null,
+   "tipo": "repes",
+   "objetivo": "acondicionamiento",
+   "material": [
+    "suelo"
+   ],
+   "cues": [
+    "Bajada controlada, flexión sólida, salto estable"
+   ],
+   "errores": [],
+   "notas": "Regresión: sin la flexión",
+   "fuentes": [
+    "petru-10-ejercicios@8:16"
+   ],
+   "criterios": []
+  },
+  {
+   "id": "comba",
+   "nombre": "Saltos a la comba (real o imaginaria)",
+   "alias": [],
+   "escalera": null,
+   "orden": null,
+   "tipo": "segundos",
+   "objetivo": "acondicionamiento",
+   "material": [
+    "suelo"
+   ],
+   "cues": [],
+   "errores": [],
+   "notas": null,
+   "fuentes": [
+    "petru-10-ejercicios@7:11"
+   ],
+   "criterios": []
+  },
+  {
+   "id": "retraccion_colgado",
+   "nombre": "Retracciones escapulares colgado",
+   "alias": [],
+   "escalera": null,
+   "orden": null,
+   "tipo": "repes",
+   "objetivo": "preparación",
+   "material": [
+    "barra"
+   ],
+   "cues": [],
+   "errores": [],
+   "notas": null,
+   "fuentes": [
+    "domein-rutina@4:06"
+   ],
+   "criterios": []
+  },
+  {
+   "id": "protraccion_paralelas",
+   "nombre": "Protracciones en paralelas",
+   "alias": [],
+   "escalera": null,
+   "orden": null,
+   "tipo": "repes",
+   "objetivo": "preparación",
+   "material": [
+    "paralelas"
+   ],
+   "cues": [],
+   "errores": [],
+   "notas": null,
+   "fuentes": [
+    "domein-rutina@4:06"
+   ],
+   "criterios": []
+  }
+ ],
+ "conflictos": [
+  {
+   "tema": "Cuándo empezar flexiones en tuck planche",
+   "a": "Petru: tras aguantar la tuck planche ~5 s",
+   "b": "Bruno Focacci: tras 15 s sólidos de tuck",
+   "decision_tracker": "Se usa el de Bruno (más conservador); cámbialo si te convence Petru"
+  },
+  {
+   "tema": "Profundidad de la flexión de pino en pared",
+   "a": "Petru (catálogo de flexiones): hasta casi tocar el suelo con la nariz",
+   "b": "Petru (vídeo de niveles) y Eryc Ortiz: codos a 90º, déficit progresivo",
+   "decision_tracker": "Parcial = hasta 90º, completa = cabeza al suelo, déficit después"
+  },
+  {
+   "tema": "Orden entre dominada al abdomen y muscle up",
+   "a": "Eryc Ortiz: pecho → abdomen → cadera",
+   "b": "Petru: explosiva → muscle up → … → cadera",
+   "decision_tracker": "Pecho → muscle up → abdomen → cadera"
+  },
+  {
+   "tema": "Estructura semanal",
+   "a": "Tu plan: empuje y tirón en días separados",
+   "b": "Domein: empuje y tirón en la misma sesión (aunque dice que separarlos también vale)",
+   "decision_tracker": "Se mantiene tu A/B"
+  }
+ ],
+ "pendientes": [
+  "Pierna: ninguna fuente enseña búlgara, shrimp o pistol. La escalera de pierna sigue sin fuente",
+  "Dragon flag: sin fuente; se ha quitado del tracker y el candlestick de Eryc ocupa su lugar",
+  "Nivel de fondos y aguante de pino: necesarios para saber si cumples los requisitos de plancha (20–25 fondos) y de flexión de pino libre (10–15 s de pino)",
+  "Material: paralelas bajas o parallettes para plancha y L-sit"
+ ],
+ "principios": [
+  {
+   "tema": "Progresión",
+   "texto": "Series al fallo técnico o a 1 repetición en recámara (RIR 1), con repeticiones o segundos variables. Al ganar fuerza el volumen sube solo; al llegar al volumen objetivo, pasas a un ejercicio más difícil y vuelves a volumen bajo.",
+   "fuente": "alge-volumen@3:42"
+  },
+  {
+   "tema": "Progresión",
+   "texto": "Convierte volumen en intensidad: cuando una progresión se aguanta 10–15 s o sale con volumen cómodo, pasa a la siguiente.",
+   "fuente": "bruno-full-planche@8:23"
+  },
+  {
+   "tema": "Progresión",
+   "texto": "Con 15 dominadas limpias, progresa a variantes en lugar de sumar repeticiones.",
+   "fuente": "petru-10-ejercicios@1:27"
+  },
+  {
+   "tema": "Fallo",
+   "texto": "Habilidades: fallo técnico (plancha: protracción y brazos rectos; front lever: brazos rectos y retracción). Básicos (dominadas, fondos, flexiones): se puede llegar al fallo muscular.",
+   "fuente": "alge-volumen@9:52"
+  },
+  {
+   "tema": "Fallo",
+   "texto": "Series cortas e intensas pueden ir al fallo; series largas al principio de la sesión, no, porque fríen el resto del entreno.",
+   "fuente": "alge-volumen@11:11"
+  },
+  {
+   "tema": "Explosividad",
+   "texto": "Trabajo explosivo en series de 3–4 repeticiones; para cuando pierdas velocidad o altura.",
+   "fuente": "alge-volumen@7:46"
+  },
+  {
+   "tema": "Estructura",
+   "texto": "Sesión en tres partes: preparación (movilidad, core, escápulas, series de aproximación) → práctica (el ejercicio objetivo, con descanso largo) → refuerzo (superseries de 6–8 y luego de 8–12).",
+   "fuente": "domein-rutina@2:17"
+  },
+  {
+   "tema": "Estructura",
+   "texto": "Práctica de fuerza: 3–5 series de 2–5 repeticiones, descansando 2–4 min, más cuanto más fatiga. Habilidades técnicas (subidas a pino…): 15–20 min de intentos en lugar de contar series.",
+   "fuente": "domein-rutina@6:45"
+  },
+  {
+   "tema": "Objetivos",
+   "texto": "Elige como objetivo un ejercicio del que haces 1–2 repeticiones y llévalo a 5–6.",
+   "fuente": "domein-rutina@1:06"
+  },
+  {
+   "tema": "Pino",
+   "texto": "Practica el pino todos los días; los de descanso, menos intentos pero sin dejarlo.",
+   "fuente": "petru-pino@2:18"
+  },
+  {
+   "tema": "Plancha",
+   "texto": "Mientras entrenas plancha, mantén el pino y las flexiones de pino: empuje en todos los ángulos.",
+   "fuente": "bruno-full-planche@3:50"
+  },
+  {
+   "tema": "Negativas y goma",
+   "texto": "Domina la negativa antes que la positiva. La goma sirve para aprender la técnica, no para construir la fuerza.",
+   "fuente": "bruno-full-planche@18:49"
+  },
+  {
+   "tema": "Técnica",
+   "texto": "Grábate para comprobar la técnica; tras el entreno apunta qué falló y qué salió bien.",
+   "fuente": "pedro-tuck-press@14:51"
+  }
+ ],
+ "descartados": [
+  "Bienvenido.md (nota por defecto de Obsidian, sin contenido)",
+  "contexto-tracker-calistenia.md (documento de contexto, no es un clipping)"
+ ]
+}
