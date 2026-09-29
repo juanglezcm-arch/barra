@@ -1,5 +1,5 @@
 "use strict";
-const APP_VERSION="1.0.1";
+const APP_VERSION="1.1.0";
 fetch("catalogo.json",{cache:"no-cache"}).then(r=>r.json()).then(main).catch(e=>{
   console.error(e);
   document.getElementById("app").innerHTML='<p class="empty">No se ha podido cargar el catálogo. Abre la app una vez con conexión.</p>';
@@ -221,15 +221,16 @@ function srcLink(tag){
   let href=so.url; if(t){const p=t.split(":").map(Number); const secs=p.length===3?p[0]*3600+p[1]*60+p[2]:p[0]*60+p[1]; href+=(href.includes("?")?"&":"?")+"t="+secs+"s"}
   return `<a href="${href}" target="_blank" rel="noopener">${esc(so.autor)}${t?" "+t:""}</a>`;
 }
-function techHTML(e){
-  if(e.provisional)return `<details class="tech"><summary>Técnica</summary><p class="small muted">Sin fuente todavía. Se sustituirá cuando ingiera un clipping de pierna.</p></details>`;
-  return `<details class="tech"><summary>Técnica</summary><ul>
+function techBody(e){
+  if(e.provisional)return `<p class="small muted">Sin fuente todavía. Se sustituirá cuando ingiera un clipping de este patrón.</p>`;
+  return `<ul>
    ${(e.cues||[]).map(c=>`<li class="ok">${esc(c)}</li>`).join("")}
    ${(e.errores||[]).map(c=>`<li class="ko">${esc(c)}</li>`).join("")}
    ${(e.criterios||[]).map(c=>`<li class="cr">${esc(c)}</li>`).join("")}
    ${e.notas?`<li class="nt">${esc(e.notas)}</li>`:""}</ul>
-   ${(e.fuentes||[]).length?`<p class="small">Ver en vídeo: ${e.fuentes.map(srcLink).join(" · ")}</p>`:""}</details>`;
+   ${(e.fuentes||[]).length?`<p class="small">Ver en vídeo: ${e.fuentes.map(srcLink).join(" · ")}</p>`:""}`;
 }
+function techHTML(e){return `<details class="tech"><summary>Técnica</summary>${techBody(e)}</details>`}
 const provTag=e=>e.provisional?'<span class="tag prov">sin fuente</span>':"";
 
 function renderHoy(){
@@ -276,14 +277,14 @@ function renderHoy(){
 }
 
 function renderEsc(){
-  let h=`<p class="muted small">Toca un escalón para ponerte ahí. Sube tras 2 sesiones seguidas en el tope del rango en todas las series; baja tras 2 sesiones con la mayoría de series por debajo del mínimo. Cada cambio manual reinicia la racha y se puede deshacer.</p>`;
+  let h=`<p class="muted small">Toca un escalón para ver su técnica y el vídeo, y ponerte ahí si quieres. Sube tras 2 sesiones seguidas en el tope del rango en todas las series; baja tras 2 sesiones con la mayoría de series por debajo del mínimo. Cada cambio manual reinicia la racha y se puede deshacer.</p>`;
   const seen=new Set();
   PLANTILLAS.forEach(p=>{
     h+=`<h2>${p.patron} · ${p.tipo}</h2>`;
     p.slots.forEach(s=>{if(seen.has(key(s.id))){h+=`<p class="small muted">${esc(LADDERS[s.ladder].nombre)}: mismo nivel que arriba.</p>`;return} seen.add(key(s.id)); const st=ST(s.id), L=LADDERS[s.ladder];
       h+=`<div class="card"><div class="card-h"><div style="flex:1"><div class="name">${esc(L.nombre)}</div><div class="meta">${targetText(s.id)}${streakDots(s.id)}</div></div></div>
       ${s.lastre?`<div class="body tight">${shiftRow(s.id)}</div>`:""}
-      <ul class="ladder">${L.peldanos.map((id,i)=>`<li class="${i===st.idx?"cur":i<st.idx?"past":""}"><button data-set="${s.id}|${i}">${esc(EX[id].nombre)}${provTag(EX[id])}</button></li>`).join("")}</ul></div>`});
+      <ul class="ladder">${L.peldanos.map((id,i)=>{const e=EX[id]; return `<li class="${i===st.idx?"cur":i<st.idx?"past":""}"><details class="rung"><summary><span class="rname">${esc(e.nombre)}${provTag(e)}</span><span class="rmark">${i===st.idx?"aquí":""}</span></summary><div class="rbody">${techBody(e)}${i===st.idx?`<p class="small muted">Es tu escalón actual: ${targetText(s.id)}.</p>`:`<button class="ghost small-btn" data-set="${s.id}|${i}">Ponerme en este escalón</button>`}</div></details></li>`}).join("")}</ul></div>`});
   });
   return h;
 }
