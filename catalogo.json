@@ -1,5 +1,5 @@
 {
- "version": 3,
+ "version": 6,
  "actualizado": "2026-09-22",
  "material_confirmado": [
   "barra",
@@ -138,6 +138,36 @@
    "tipo": "tecnica",
    "aporta": "5 modificaciones: dominada alta, fondos con depresión escapular, candlestick, HSPU déficit, palmadas",
    "ingerido": "2026-09-22"
+  },
+  {
+   "id": "calisteniapp-pistol",
+   "titulo": "Pistol squat: técnica, progresiones y cómo conseguirla desde cero",
+   "autor": "Calisteniapp (Alex Belt)",
+   "url": "https://calisteniapp.com/es/articles/pistol-squat-progresiones",
+   "publicado": "2026-07-27",
+   "tipo": "escalera",
+   "ingerido": "2026-09-29",
+   "aporta": "Requisito de entrada, 6 progresiones hasta la pistol, errores, movilidad de tobillo y cadera y una rutina concreta"
+  },
+  {
+   "id": "mpcalisthenics-pistol",
+   "titulo": "Pistol Squat – The Ultimate Progression Guide",
+   "autor": "Maximum Potential Calisthenics (Dave Mace)",
+   "url": "https://www.mpcalisthenics.com/tutorial/pistol-squat-the-ultimate-progression-guide",
+   "publicado": "2019-11-26",
+   "tipo": "escalera",
+   "ingerido": "2026-09-29",
+   "aporta": "10 pasos hasta la pistol estricta, criterios de forma segura y estricta, y variantes posteriores (shrimp, dragon)"
+  },
+  {
+   "id": "claude",
+   "titulo": "Peldaños añadidos sin clipping",
+   "autor": "Añadido por Claude",
+   "url": "",
+   "publicado": "",
+   "tipo": "propio",
+   "ingerido": "2026-10-20",
+   "aporta": "Ejercicios y progresiones que faltaban en las fuentes ingeridas. Conocimiento general, no sale de ningún vídeo de tus youtubers: trátalos con más cautela y sustitúyelos cuando ingieras un clipping del tema"
   }
  ],
  "escaleras": [
@@ -307,17 +337,22 @@
   },
   {
    "id": "pino_fuerza",
-   "nombre": "Rana → pino por fuerza",
+   "nombre": "Rana → pino por fuerza (press)",
    "patron": "empuje_vertical",
    "lineal": true,
    "peldanos": [
     "rana",
     "enanito",
-    "pino_fuerza"
+    "press_negativa",
+    "press_enanito",
+    "pino_fuerza",
+    "press_pica_elevada",
+    "press_straddle"
    ],
    "notas": null,
    "fuentes": [
     "petru-10-habilidades",
+    "claude",
     "pedro-tuck-press"
    ]
   },
@@ -418,15 +453,19 @@
    "patron": "tiron_vertical",
    "lineal": true,
    "peldanos": [
+    "dominada_arquera",
+    "dominada_typewriter",
     "aguante_una_mano",
     "negativa_una_mano",
+    "dominada_toalla",
     "dominada_una_mano_asistida",
     "dominada_una_mano"
    ],
    "notas": null,
    "fuentes": [
-    "petru-niveles-dominadas",
-    "petru-10-habilidades"
+    "petru-10-habilidades",
+    "claude",
+    "petru-niveles-dominadas"
    ]
   },
   {
@@ -483,10 +522,14 @@
    "peldanos": [
     "fl_tuck",
     "fl_adv_tuck",
-    "fl_goma"
+    "fl_una_pierna",
+    "fl_goma",
+    "fl_straddle",
+    "fl_completo"
    ],
-   "notas": null,
+   "notas": "Criterios de paso orientativos (10–15 s limpios en cada peldaño): no salen de ninguna fuente ingerida",
    "fuentes": [
+    "claude",
     "petru-10-habilidades"
    ]
   },
@@ -591,6 +634,178 @@
    "notas": null,
    "fuentes": [
     "petru-flexiones"
+   ]
+  },
+  {
+   "id": "pierna",
+   "nombre": "Pierna: sentadilla → pistol",
+   "patron": "pierna",
+   "lineal": true,
+   "fuentes": [
+    "calisteniapp-pistol",
+    "mpcalisthenics-pistol"
+   ],
+   "notas": "Fusión de dos fuentes que coinciden en el orden; las variantes posteriores (shrimp, dragon) quedan al final",
+   "peldanos": [
+    "sentadilla",
+    "zancada_estatica",
+    "sentadilla_split",
+    "zancada_atras",
+    "zancada_atras_deficit",
+    "bulgara",
+    "subida_plataforma",
+    "step_down_una_pierna",
+    "pistol_parcial",
+    "pistol_asistida",
+    "pistol_elevada",
+    "pistol_wushu",
+    "pistol",
+    "pistol_estricta",
+    "shrimp",
+    "shrimp_turbo",
+    "pistol_dragon"
+   ]
+  },
+  {
+   "id": "fondos_fuerza",
+   "nombre": "Fondos: de normales a coreanos",
+   "patron": "empuje_horizontal",
+   "lineal": true,
+   "fuentes": [
+    "claude"
+   ],
+   "notas": "Escalera sin lastre, construida por Claude a partir de los fondos que sí traen las fuentes",
+   "peldanos": [
+    "fondos",
+    "fondos_pausa",
+    "fondos_tempo",
+    "fondos_barra_recta",
+    "fondos_lsit",
+    "fondos_lean",
+    "fondos_coreanos"
+   ]
+  },
+  {
+   "id": "muscleup",
+   "nombre": "Muscle up",
+   "patron": "tiron_vertical",
+   "lineal": true,
+   "fuentes": [
+    "petru-niveles-dominadas",
+    "claude"
+   ],
+   "peldanos": [
+    "dominada_explosiva",
+    "muscle_up_balanceo",
+    "muscle_up",
+    "muscle_up_estricto",
+    "muscle_up_lento",
+    "muscle_up_lsit"
+   ]
+  },
+  {
+   "id": "remo_fl",
+   "nombre": "Remo en L → remo en front lever",
+   "patron": "tiron_horizontal",
+   "lineal": true,
+   "fuentes": [
+    "claude"
+   ],
+   "peldanos": [
+    "remo_fl_goma",
+    "remo_fl_tuck",
+    "remo_fl_una_pierna",
+    "remo_fl_straddle"
+   ]
+  },
+  {
+   "id": "vsit",
+   "nombre": "L-sit → V-sit",
+   "patron": "core",
+   "lineal": true,
+   "fuentes": [
+    "claude"
+   ],
+   "notas": "Mitad fuerza, mitad compresión: los dos primeros peldaños son movilidad activa",
+   "peldanos": [
+    "compresion_pike",
+    "lsit_alto",
+    "vsit_una_pierna",
+    "vsit_asistida",
+    "vsit"
+   ]
+  },
+  {
+   "id": "compresion",
+   "nombre": "Compresión y apertura",
+   "patron": "movilidad",
+   "lineal": true,
+   "fuentes": [
+    "claude"
+   ],
+   "peldanos": [
+    "compresion_pike",
+    "compresion_straddle",
+    "pancake"
+   ]
+  },
+  {
+   "id": "core_suave",
+   "nombre": "Core suave (circuito)",
+   "patron": "core",
+   "lineal": false,
+   "fuentes": [
+    "claude"
+   ],
+   "peldanos": [
+    "core_circuito"
+   ]
+  },
+  {
+   "id": "core_duro",
+   "nombre": "Core a tope (Badin)",
+   "patron": "core",
+   "lineal": false,
+   "fuentes": [
+    "claude"
+   ],
+   "peldanos": [
+    "core_badin"
+   ]
+  },
+  {
+   "id": "pino_paralelas",
+   "nombre": "Pino en paralelas",
+   "patron": "empuje_vertical",
+   "lineal": true,
+   "fuentes": [
+    "claude"
+   ],
+   "notas": "Mismo pino, otro apoyo: menos muñeca y más rango en las flexiones. Peldaños añadidos por Claude",
+   "peldanos": [
+    "pino_paralelas_aguante",
+    "hspu_paralelas_parcial",
+    "hspu_paralelas",
+    "pino_una_mano"
+   ]
+  },
+  {
+   "id": "fl_fuerza",
+   "nombre": "Front lever: negativas y presses",
+   "patron": "tiron_horizontal",
+   "lineal": true,
+   "fuentes": [
+    "claude"
+   ],
+   "notas": "Las negativas van antes que los presses en la misma posición. Peldaños y criterios añadidos por Claude",
+   "peldanos": [
+    "fl_neg_tuck",
+    "fl_neg_adv_tuck",
+    "fl_neg_una_pierna",
+    "fl_neg_straddle",
+    "fl_press_tuck",
+    "fl_press_adv_tuck",
+    "fl_press_straddle"
    ]
   }
  ],
@@ -2367,7 +2582,9 @@
    "fuentes": [
     "petru-10-habilidades@3:09"
    ],
-   "criterios": []
+   "criterios": [
+    "Orientativo: 10–15 s de enanito antes de empezar con las negativas de press (Añadido por Claude)"
+   ]
   },
   {
    "id": "pino_fuerza",
@@ -3272,7 +3489,9 @@
    "fuentes": [
     "petru-10-habilidades@13:25"
    ],
-   "criterios": []
+   "criterios": [
+    "Orientativo: 10–15 s limpios antes de pasar al siguiente (Añadido por Claude)"
+   ]
   },
   {
    "id": "fl_goma",
@@ -3526,8 +3745,8 @@
    "id": "sentadilla",
    "nombre": "Sentadilla con peso corporal",
    "alias": [],
-   "escalera": null,
-   "orden": null,
+   "escalera": "pierna",
+   "orden": 1,
    "tipo": "repes",
    "objetivo": "pierna",
    "material": [
@@ -3539,9 +3758,13 @@
    "errores": [],
    "notas": "Alternativa si duelen las articulaciones: sentadilla isométrica en la pared",
    "fuentes": [
-    "petru-10-ejercicios@7:43"
+    "petru-10-ejercicios@7:43",
+    "calisteniapp-pistol@requisitos",
+    "mpcalisthenics-pistol@paso-1"
    ],
-   "criterios": []
+   "criterios": [
+    "Requisito para empezar con la pistol: 10–20 sentadillas profundas controladas, con la cadera por debajo de las rodillas (Calisteniapp (Alex Belt))"
+   ]
   },
   {
    "id": "sentadilla_pared",
@@ -3639,6 +3862,1384 @@
     "domein-rutina@4:06"
    ],
    "criterios": []
+  },
+  {
+   "id": "zancada_estatica",
+   "nombre": "Zancada estática",
+   "alias": [],
+   "escalera": "pierna",
+   "orden": 2,
+   "tipo": "repes",
+   "objetivo": "pierna",
+   "material": [
+    "suelo"
+   ],
+   "cues": [
+    "Zancada larga hacia delante, manos en la cadera",
+    "Baja hasta que la rodilla trasera roce el suelo y empuja con el talón"
+   ],
+   "errores": [],
+   "criterios": [],
+   "notas": null,
+   "fuentes": [
+    "mpcalisthenics-pistol@paso-2"
+   ]
+  },
+  {
+   "id": "sentadilla_split",
+   "nombre": "Sentadilla split",
+   "alias": [],
+   "escalera": "pierna",
+   "orden": 3,
+   "tipo": "repes",
+   "objetivo": "pierna",
+   "material": [
+    "suelo"
+   ],
+   "cues": [
+    "Un pie delante y otro detrás apoyado en la punta, los dos mirando al frente",
+    "Inclina un poco el torso y baja en línea vertical"
+   ],
+   "errores": [],
+   "criterios": [],
+   "notas": "Empieza a repartir más peso sobre una pierna",
+   "fuentes": [
+    "calisteniapp-pistol@progresion-1"
+   ]
+  },
+  {
+   "id": "zancada_atras",
+   "nombre": "Zancada hacia atrás",
+   "alias": [],
+   "escalera": "pierna",
+   "orden": 4,
+   "tipo": "repes",
+   "objetivo": "pierna",
+   "material": [
+    "suelo"
+   ],
+   "cues": [
+    "Empieza con los pies juntos, da la zancada atrás bajando en un solo movimiento y vuelve"
+   ],
+   "errores": [],
+   "criterios": [],
+   "notas": null,
+   "fuentes": [
+    "calisteniapp-pistol@progresion-2"
+   ]
+  },
+  {
+   "id": "zancada_atras_deficit",
+   "nombre": "Zancada hacia atrás con déficit",
+   "alias": [],
+   "escalera": "pierna",
+   "orden": 5,
+   "tipo": "repes",
+   "objetivo": "pierna",
+   "material": [
+    "step o escalón bajo"
+   ],
+   "cues": [
+    "Sobre una plataforma baja, para bajar más y acercarte al rango de la pistol"
+   ],
+   "errores": [
+    "Alejar mucho el pie trasero: la rodilla debe pasar por delante de la punta, como en la pistol"
+   ],
+   "criterios": [],
+   "notas": null,
+   "fuentes": [
+    "calisteniapp-pistol@progresion-3"
+   ]
+  },
+  {
+   "id": "bulgara",
+   "nombre": "Sentadilla búlgara",
+   "alias": [],
+   "escalera": "pierna",
+   "orden": 6,
+   "tipo": "repes",
+   "objetivo": "pierna",
+   "material": [
+    "banco o superficie elevada"
+   ],
+   "cues": [
+    "Pie trasero elevado, zancada larga con el delantero",
+    "Baja hasta que la rodilla trasera roce el suelo, empuja con el talón"
+   ],
+   "errores": [],
+   "criterios": [],
+   "notas": null,
+   "fuentes": [
+    "mpcalisthenics-pistol@paso-3"
+   ]
+  },
+  {
+   "id": "subida_plataforma",
+   "nombre": "Subida a plataforma",
+   "alias": [],
+   "escalera": "pierna",
+   "orden": 7,
+   "tipo": "repes",
+   "objetivo": "pierna",
+   "material": [
+    "caja o silla a la altura de la rodilla"
+   ],
+   "cues": [
+    "Un pie sobre la plataforma y el otro cerca de ella, no alejado",
+    "Inclínate un poco adelante y sube solo con la pierna de arriba"
+   ],
+   "errores": [
+    "Impulsarte con el pie de abajo"
+   ],
+   "criterios": [
+    "Progresa subiendo la altura de la plataforma (Calisteniapp (Alex Belt))"
+   ],
+   "notas": null,
+   "fuentes": [
+    "calisteniapp-pistol@progresion-4"
+   ]
+  },
+  {
+   "id": "step_down_una_pierna",
+   "nombre": "Bajada a una pierna desde plataforma",
+   "alias": [],
+   "escalera": "pierna",
+   "orden": 8,
+   "tipo": "repes",
+   "objetivo": "pierna",
+   "material": [
+    "banco o caja"
+   ],
+   "cues": [
+    "De pie sobre un banco con el talón en el borde, brazos al frente",
+    "Baja la pierna libre por detrás todo lo que controles; si llega al suelo, toca con la punta sin empujar"
+   ],
+   "errores": [],
+   "criterios": [
+    "Progresa bajando más o usando una plataforma más alta (Maximum Potential Calisthenics (Dave Mace))"
+   ],
+   "notas": null,
+   "fuentes": [
+    "mpcalisthenics-pistol@paso-4"
+   ]
+  },
+  {
+   "id": "pistol_parcial",
+   "nombre": "Pistol parcial a plataforma (box pistol)",
+   "alias": [],
+   "escalera": "pierna",
+   "orden": 9,
+   "tipo": "repes",
+   "objetivo": "pierna",
+   "material": [
+    "caja o banco"
+   ],
+   "cues": [
+    "Siéntate en la plataforma con una pierna, la libre al frente sin subirla mucho",
+    "Empuja con el talón para volver"
+   ],
+   "errores": [],
+   "criterios": [
+    "Progresa bajando la altura de la plataforma; por debajo de la rodilla, pasa a la asistida (Calisteniapp (Alex Belt))"
+   ],
+   "notas": null,
+   "fuentes": [
+    "calisteniapp-pistol@progresion-5",
+    "mpcalisthenics-pistol@paso-5"
+   ]
+  },
+  {
+   "id": "pistol_asistida",
+   "nombre": "Pistol asistida (agarrándote)",
+   "alias": [],
+   "escalera": "pierna",
+   "orden": 10,
+   "tipo": "repes",
+   "objetivo": "pierna",
+   "material": [
+    "poste, TRX o compañero"
+   ],
+   "cues": [
+    "Agárrate con uno o dos brazos, los que necesites",
+    "Baja hasta que el isquio toque el gemelo y sube empujando con el talón"
+   ],
+   "errores": [],
+   "criterios": [
+    "Ve reduciendo la ayuda (Maximum Potential Calisthenics (Dave Mace))"
+   ],
+   "notas": null,
+   "fuentes": [
+    "mpcalisthenics-pistol@paso-6"
+   ]
+  },
+  {
+   "id": "pistol_elevada",
+   "nombre": "Pistol elevada (sobre plataforma)",
+   "alias": [],
+   "escalera": "pierna",
+   "orden": 11,
+   "tipo": "repes",
+   "objetivo": "pierna",
+   "material": [
+    "banco o caja"
+   ],
+   "cues": [
+    "De pie sobre el banco con el borde bajo el puente del pie",
+    "Deja que la pierna libre baje por debajo del nivel del suelo"
+   ],
+   "errores": [],
+   "criterios": [],
+   "notas": null,
+   "fuentes": [
+    "mpcalisthenics-pistol@paso-7"
+   ]
+  },
+  {
+   "id": "pistol_wushu",
+   "nombre": "Pistol wushu (agarrando el pie)",
+   "alias": [],
+   "escalera": "pierna",
+   "orden": 12,
+   "tipo": "repes",
+   "objetivo": "pierna",
+   "material": [
+    "suelo"
+   ],
+   "cues": [
+    "Sujeta los dedos del pie libre con la mano del mismo lado",
+    "El otro brazo al lado para equilibrar"
+   ],
+   "errores": [],
+   "criterios": [],
+   "notas": null,
+   "fuentes": [
+    "mpcalisthenics-pistol@paso-8"
+   ]
+  },
+  {
+   "id": "pistol",
+   "nombre": "Pistol squat",
+   "alias": [],
+   "escalera": "pierna",
+   "orden": 13,
+   "tipo": "repes",
+   "objetivo": "pierna",
+   "material": [
+    "suelo"
+   ],
+   "cues": [
+    "Pies juntos mirando al frente, brazos al frente de contrapeso",
+    "La rodilla alineada con el pie; el torso se encorva un poco, es normal",
+    "Abajo: pie entero apoyado, pierna libre extendida"
+   ],
+   "errores": [
+    "Levantar el talón del suelo (falta de movilidad de tobillo)",
+    "Doblar mucho la pierna libre (falta de movilidad de cadera)",
+    "Rodilla hacia dentro o pie rotado"
+   ],
+   "criterios": [
+    "Forma segura mínima: rodilla en la línea de los dedos y talón siempre en el suelo (Maximum Potential Calisthenics (Dave Mace))"
+   ],
+   "notas": null,
+   "fuentes": [
+    "calisteniapp-pistol@tecnica",
+    "mpcalisthenics-pistol@paso-9"
+   ]
+  },
+  {
+   "id": "pistol_estricta",
+   "nombre": "Pistol squat estricta",
+   "alias": [],
+   "escalera": "pierna",
+   "orden": 14,
+   "tipo": "repes",
+   "objetivo": "pierna",
+   "material": [
+    "suelo"
+   ],
+   "cues": [
+    "Pierna libre recta y paralela al suelo durante todo el recorrido",
+    "Pausa de 1 s abajo, sin rebote"
+   ],
+   "errores": [],
+   "criterios": [],
+   "notas": null,
+   "fuentes": [
+    "mpcalisthenics-pistol@paso-10"
+   ]
+  },
+  {
+   "id": "shrimp",
+   "nombre": "Shrimp squat",
+   "alias": [],
+   "escalera": "pierna",
+   "orden": 15,
+   "tipo": "repes",
+   "objetivo": "pierna",
+   "material": [
+    "suelo"
+   ],
+   "cues": [
+    "La pierna libre va detrás en vez de delante; carga más glúteo"
+   ],
+   "errores": [],
+   "criterios": [],
+   "notas": null,
+   "fuentes": [
+    "mpcalisthenics-pistol@mas-alla"
+   ]
+  },
+  {
+   "id": "shrimp_turbo",
+   "nombre": "Turbo shrimp squat",
+   "alias": [],
+   "escalera": "pierna",
+   "orden": 16,
+   "tipo": "repes",
+   "objetivo": "pierna",
+   "material": [
+    "suelo"
+   ],
+   "cues": [
+    "Shrimp desde una elevación, para más rango"
+   ],
+   "errores": [],
+   "criterios": [],
+   "notas": null,
+   "fuentes": [
+    "mpcalisthenics-pistol@mas-alla"
+   ]
+  },
+  {
+   "id": "pistol_dragon",
+   "nombre": "Dragon pistol squat",
+   "alias": [],
+   "escalera": "pierna",
+   "orden": 17,
+   "tipo": "repes",
+   "objetivo": "pierna",
+   "material": [
+    "suelo"
+   ],
+   "cues": [
+    "La pierna libre pasa por detrás y al otro lado de la que trabaja"
+   ],
+   "errores": [],
+   "criterios": [],
+   "notas": null,
+   "fuentes": [
+    "mpcalisthenics-pistol@mas-alla"
+   ]
+  },
+  {
+   "id": "estiramiento_gemelos",
+   "nombre": "Estiramiento de gemelos",
+   "alias": [],
+   "escalera": null,
+   "orden": null,
+   "tipo": "segundos",
+   "objetivo": "movilidad",
+   "material": [
+    "suelo"
+   ],
+   "cues": [
+    "Pie atrás con toda la planta apoyada, piernas en diagonal"
+   ],
+   "errores": [],
+   "criterios": [],
+   "notas": "Mejora la dorsiflexión de tobillo, la limitación más común de la pistol",
+   "fuentes": [
+    "calisteniapp-pistol@movilidad"
+   ]
+  },
+  {
+   "id": "elevacion_pierna_flexores",
+   "nombre": "Elevación de pierna recta con cadera flexionada",
+   "alias": [],
+   "escalera": null,
+   "orden": null,
+   "tipo": "repes",
+   "objetivo": "movilidad",
+   "material": [
+    "suelo"
+   ],
+   "cues": [
+    "Sube la pierna recta con la cadera bien flexionada: fuerza del flexor en el rango final"
+   ],
+   "errores": [],
+   "criterios": [],
+   "notas": "Es lo que permite mantener la pierna libre arriba en la pistol",
+   "fuentes": [
+    "calisteniapp-pistol@movilidad"
+   ]
+  },
+  {
+   "id": "fondos_pausa",
+   "nombre": "Fondos con pausa abajo",
+   "alias": [],
+   "escalera": "fondos_fuerza",
+   "orden": 2,
+   "tipo": "repes",
+   "objetivo": "fuerza",
+   "material": [
+    "paralelas"
+   ],
+   "cues": [
+    "2 s parado abajo, sin rebote",
+    "Hombros atrás y abajo, pecho dentro"
+   ],
+   "errores": [],
+   "criterios": [],
+   "notas": null,
+   "fuentes": [
+    "claude"
+   ],
+   "propio": true
+  },
+  {
+   "id": "fondos_tempo",
+   "nombre": "Fondos a tempo lento (3-1-3)",
+   "alias": [],
+   "escalera": "fondos_fuerza",
+   "orden": 3,
+   "tipo": "repes",
+   "objetivo": "fuerza",
+   "material": [
+    "paralelas"
+   ],
+   "cues": [
+    "3 s bajando, 1 s abajo, 3 s subiendo"
+   ],
+   "errores": [],
+   "criterios": [],
+   "notas": "Sin lastre, el tiempo bajo tensión es la forma de subir la carga",
+   "fuentes": [
+    "claude"
+   ],
+   "propio": true
+  },
+  {
+   "id": "fondos_barra_recta",
+   "nombre": "Fondos en barra recta",
+   "alias": [],
+   "escalera": "fondos_fuerza",
+   "orden": 4,
+   "tipo": "repes",
+   "objetivo": "fuerza",
+   "material": [
+    "barra recta"
+   ],
+   "cues": [
+    "Cuerpo ligeramente inclinado adelante, barra pegada al cuerpo",
+    "Muñecas en línea con el antebrazo"
+   ],
+   "errores": [],
+   "criterios": [],
+   "notas": "Es la posición de salida del muscle up: te sirve para los dos objetivos",
+   "fuentes": [
+    "claude"
+   ],
+   "propio": true
+  },
+  {
+   "id": "fondos_lsit",
+   "nombre": "Fondos con piernas en L",
+   "alias": [],
+   "escalera": "fondos_fuerza",
+   "orden": 5,
+   "tipo": "repes",
+   "objetivo": "fuerza",
+   "material": [
+    "paralelas"
+   ],
+   "cues": [
+    "Piernas rectas y paralelas al suelo durante todo el recorrido"
+   ],
+   "errores": [],
+   "criterios": [],
+   "notas": "Suma compresión al empuje: entra también en el camino de la V-sit",
+   "fuentes": [
+    "claude"
+   ],
+   "propio": true
+  },
+  {
+   "id": "fondos_lean",
+   "nombre": "Fondos inclinados (pseudo-plancha)",
+   "alias": [],
+   "escalera": "fondos_fuerza",
+   "orden": 6,
+   "tipo": "repes",
+   "objetivo": "fuerza",
+   "material": [
+    "paralelas"
+   ],
+   "cues": [
+    "Cuerpo muy inclinado adelante, hombros por delante de las manos",
+    "Protracción escapular arriba"
+   ],
+   "errores": [],
+   "criterios": [],
+   "notas": "Acerca el empuje a la plancha",
+   "fuentes": [
+    "claude"
+   ],
+   "propio": true
+  },
+  {
+   "id": "fondos_coreanos",
+   "nombre": "Fondos coreanos",
+   "alias": [],
+   "escalera": "fondos_fuerza",
+   "orden": 7,
+   "tipo": "repes",
+   "objetivo": "fuerza",
+   "material": [
+    "barra recta"
+   ],
+   "cues": [
+    "En barra recta, con la barra por detrás de la espalda",
+    "Entra poco a poco: exige mucho hombro"
+   ],
+   "errores": [
+    "Forzar el rango antes de tener hombro sano"
+   ],
+   "criterios": [],
+   "notas": null,
+   "fuentes": [
+    "claude"
+   ],
+   "propio": true
+  },
+  {
+   "id": "dominada_arquera",
+   "nombre": "Dominada arquera",
+   "alias": [],
+   "escalera": "tiron_una_mano",
+   "orden": 1,
+   "tipo": "repes",
+   "objetivo": "fuerza",
+   "material": [
+    "barra"
+   ],
+   "cues": [
+    "Agarre ancho; subes hacia una mano mientras el otro brazo se estira",
+    "Mitad de repeticiones por lado"
+   ],
+   "errores": [],
+   "criterios": [],
+   "notas": null,
+   "fuentes": [
+    "claude"
+   ],
+   "propio": true
+  },
+  {
+   "id": "dominada_typewriter",
+   "nombre": "Dominada typewriter",
+   "alias": [],
+   "escalera": "tiron_una_mano",
+   "orden": 2,
+   "tipo": "repes",
+   "objetivo": "fuerza",
+   "material": [
+    "barra"
+   ],
+   "cues": [
+    "Arriba, desplázate de lado a lado sin bajar",
+    "Barbilla siempre por encima de la barra"
+   ],
+   "errores": [],
+   "criterios": [],
+   "notas": null,
+   "fuentes": [
+    "claude"
+   ],
+   "propio": true
+  },
+  {
+   "id": "dominada_toalla",
+   "nombre": "Dominada a una mano con toalla",
+   "alias": [],
+   "escalera": "tiron_una_mano",
+   "orden": 5,
+   "tipo": "repes",
+   "objetivo": "fuerza",
+   "material": [
+    "barra",
+    "toalla"
+   ],
+   "cues": [
+    "Una mano en la barra, la otra agarrando una toalla colgada; baja la ayuda poco a poco"
+   ],
+   "errores": [],
+   "criterios": [],
+   "notas": null,
+   "fuentes": [
+    "claude"
+   ],
+   "propio": true
+  },
+  {
+   "id": "muscle_up_balanceo",
+   "nombre": "Muscle up con balanceo",
+   "alias": [],
+   "escalera": "muscleup",
+   "orden": 2,
+   "tipo": "repes",
+   "objetivo": "fuerza",
+   "material": [
+    "barra"
+   ],
+   "cues": [
+    "Un poco de kipping para pasar la transición",
+    "Tira hasta el pecho y mete la cabeza rápido"
+   ],
+   "errores": [],
+   "criterios": [],
+   "notas": "Donde estás ahora: 2 repeticiones",
+   "fuentes": [
+    "claude"
+   ],
+   "propio": true
+  },
+  {
+   "id": "muscle_up_estricto",
+   "nombre": "Muscle up estricto",
+   "alias": [],
+   "escalera": "muscleup",
+   "orden": 4,
+   "tipo": "repes",
+   "objetivo": "fuerza",
+   "material": [
+    "barra"
+   ],
+   "cues": [
+    "Sin balanceo: la dominada llega al abdomen y la transición es fuerza pura",
+    "Aléjate de la barra al subir"
+   ],
+   "errores": [],
+   "criterios": [],
+   "notas": null,
+   "fuentes": [
+    "claude"
+   ],
+   "propio": true
+  },
+  {
+   "id": "muscle_up_lento",
+   "nombre": "Muscle up lento",
+   "alias": [],
+   "escalera": "muscleup",
+   "orden": 5,
+   "tipo": "repes",
+   "objetivo": "fuerza",
+   "material": [
+    "barra"
+   ],
+   "cues": [
+    "Transición controlada, sin golpe de muñeca"
+   ],
+   "errores": [],
+   "criterios": [],
+   "notas": null,
+   "fuentes": [
+    "claude"
+   ],
+   "propio": true
+  },
+  {
+   "id": "muscle_up_lsit",
+   "nombre": "Muscle up con piernas en L",
+   "alias": [],
+   "escalera": "muscleup",
+   "orden": 6,
+   "tipo": "repes",
+   "objetivo": "fuerza",
+   "material": [
+    "barra"
+   ],
+   "cues": [
+    "Piernas rectas al frente todo el movimiento"
+   ],
+   "errores": [],
+   "criterios": [],
+   "notas": null,
+   "fuentes": [
+    "claude"
+   ],
+   "propio": true
+  },
+  {
+   "id": "fl_una_pierna",
+   "nombre": "Front lever a una pierna",
+   "alias": [],
+   "escalera": "front_lever",
+   "orden": 3,
+   "tipo": "segundos",
+   "objetivo": "skill",
+   "material": [
+    "barra"
+   ],
+   "cues": [
+    "Una pierna estirada y la otra flexionada; cambia de lado cada serie"
+   ],
+   "errores": [],
+   "criterios": [
+    "Orientativo: 10–15 s limpios antes de pasar al siguiente (Añadido por Claude)"
+   ],
+   "notas": null,
+   "fuentes": [
+    "claude"
+   ],
+   "propio": true
+  },
+  {
+   "id": "fl_straddle",
+   "nombre": "Front lever en straddle",
+   "alias": [],
+   "escalera": "front_lever",
+   "orden": 5,
+   "tipo": "segundos",
+   "objetivo": "skill",
+   "material": [
+    "barra"
+   ],
+   "cues": [
+    "Piernas rectas y bien abiertas",
+    "Escápulas deprimidas y brazos bloqueados"
+   ],
+   "errores": [],
+   "criterios": [
+    "Orientativo: 10–15 s limpios antes de pasar al siguiente (Añadido por Claude)"
+   ],
+   "notas": null,
+   "fuentes": [
+    "claude"
+   ],
+   "propio": true
+  },
+  {
+   "id": "fl_completo",
+   "nombre": "Front lever completo",
+   "alias": [],
+   "escalera": "front_lever",
+   "orden": 6,
+   "tipo": "segundos",
+   "objetivo": "skill",
+   "material": [
+    "barra"
+   ],
+   "cues": [
+    "Piernas juntas, cuerpo paralelo al suelo"
+   ],
+   "errores": [],
+   "criterios": [],
+   "notas": null,
+   "fuentes": [
+    "claude"
+   ],
+   "propio": true
+  },
+  {
+   "id": "remo_fl_goma",
+   "nombre": "Remo en L con goma",
+   "alias": [],
+   "escalera": "remo_fl",
+   "orden": 1,
+   "tipo": "repes",
+   "objetivo": "fuerza",
+   "material": [
+    "barra",
+    "goma elástica"
+   ],
+   "cues": [
+    "Colgado con las piernas en L y goma ayudando; rema hasta tocar la barra con el pecho"
+   ],
+   "errores": [],
+   "criterios": [],
+   "notas": "Es el que ya haces: la goma se va aflojando con las semanas",
+   "fuentes": [
+    "claude"
+   ],
+   "propio": true
+  },
+  {
+   "id": "remo_fl_tuck",
+   "nombre": "Remo en tuck front lever",
+   "alias": [],
+   "escalera": "remo_fl",
+   "orden": 2,
+   "tipo": "repes",
+   "objetivo": "fuerza",
+   "material": [
+    "barra"
+   ],
+   "cues": [
+    "Rodillas al pecho, cuerpo horizontal, brazos rectos al bajar"
+   ],
+   "errores": [],
+   "criterios": [],
+   "notas": null,
+   "fuentes": [
+    "claude"
+   ],
+   "propio": true
+  },
+  {
+   "id": "remo_fl_una_pierna",
+   "nombre": "Remo en front lever a una pierna",
+   "alias": [],
+   "escalera": "remo_fl",
+   "orden": 3,
+   "tipo": "repes",
+   "objetivo": "fuerza",
+   "material": [
+    "barra"
+   ],
+   "cues": [],
+   "errores": [],
+   "criterios": [],
+   "notas": null,
+   "fuentes": [
+    "claude"
+   ],
+   "propio": true
+  },
+  {
+   "id": "remo_fl_straddle",
+   "nombre": "Remo en front lever straddle",
+   "alias": [],
+   "escalera": "remo_fl",
+   "orden": 4,
+   "tipo": "repes",
+   "objetivo": "fuerza",
+   "material": [
+    "barra"
+   ],
+   "cues": [],
+   "errores": [],
+   "criterios": [],
+   "notas": null,
+   "fuentes": [
+    "claude"
+   ],
+   "propio": true
+  },
+  {
+   "id": "compresion_pike",
+   "nombre": "Compresión activa en pike",
+   "alias": [],
+   "escalera": "vsit",
+   "orden": 1,
+   "tipo": "segundos",
+   "objetivo": "movilidad",
+   "material": [
+    "suelo"
+   ],
+   "cues": [
+    "Sentado con las piernas juntas y rectas, tira de los flexores para despegar los talones",
+    "Aguanta arriba, no rebotes"
+   ],
+   "errores": [],
+   "criterios": [],
+   "notas": "La V-sit se atasca por compresión, no por fuerza de tríceps",
+   "fuentes": [
+    "claude"
+   ],
+   "propio": true
+  },
+  {
+   "id": "compresion_straddle",
+   "nombre": "Compresión en straddle (piernas abiertas)",
+   "alias": [],
+   "escalera": "compresion",
+   "orden": 2,
+   "tipo": "segundos",
+   "objetivo": "movilidad",
+   "material": [
+    "suelo"
+   ],
+   "cues": [
+    "Mismo trabajo con las piernas abiertas; ayuda al straddle planche y a la V-sit"
+   ],
+   "errores": [],
+   "criterios": [],
+   "notas": null,
+   "fuentes": [
+    "claude"
+   ],
+   "propio": true
+  },
+  {
+   "id": "pancake",
+   "nombre": "Pancake (apertura en straddle)",
+   "alias": [],
+   "escalera": "compresion",
+   "orden": 3,
+   "tipo": "segundos",
+   "objetivo": "movilidad",
+   "material": [
+    "suelo"
+   ],
+   "cues": [
+    "Piernas abiertas, pecho al suelo con la espalda recta",
+    "Aguantes de 30–60 s, sin rebotes"
+   ],
+   "errores": [],
+   "criterios": [],
+   "notas": null,
+   "fuentes": [
+    "claude"
+   ],
+   "propio": true
+  },
+  {
+   "id": "lsit_alto",
+   "nombre": "L-sit alto (cadera por encima de las manos)",
+   "alias": [],
+   "escalera": "vsit",
+   "orden": 2,
+   "tipo": "segundos",
+   "objetivo": "core",
+   "material": [
+    "paralelas"
+   ],
+   "cues": [
+    "Empuja las paralelas hacia abajo hasta subir la cadera por encima de las manos"
+   ],
+   "errores": [],
+   "criterios": [],
+   "notas": null,
+   "fuentes": [
+    "claude"
+   ],
+   "propio": true
+  },
+  {
+   "id": "vsit_una_pierna",
+   "nombre": "V-sit a una pierna",
+   "alias": [],
+   "escalera": "vsit",
+   "orden": 3,
+   "tipo": "segundos",
+   "objetivo": "core",
+   "material": [
+    "paralelas"
+   ],
+   "cues": [
+    "Una pierna arriba en V y la otra en L; cambia cada serie"
+   ],
+   "errores": [],
+   "criterios": [],
+   "notas": null,
+   "fuentes": [
+    "claude"
+   ],
+   "propio": true
+  },
+  {
+   "id": "vsit_asistida",
+   "nombre": "V-sit con apoyo elevado",
+   "alias": [],
+   "escalera": "vsit",
+   "orden": 4,
+   "tipo": "segundos",
+   "objetivo": "core",
+   "material": [
+    "paralelas"
+   ],
+   "cues": [
+    "Paralelas altas o apoyo bajo los pies para quitar algo de compresión"
+   ],
+   "errores": [],
+   "criterios": [],
+   "notas": null,
+   "fuentes": [
+    "claude"
+   ],
+   "propio": true
+  },
+  {
+   "id": "vsit",
+   "nombre": "V-sit",
+   "alias": [],
+   "escalera": "vsit",
+   "orden": 5,
+   "tipo": "segundos",
+   "objetivo": "skill",
+   "material": [
+    "paralelas"
+   ],
+   "cues": [
+    "Piernas rectas por encima de la horizontal, hombros deprimidos"
+   ],
+   "errores": [],
+   "criterios": [],
+   "notas": null,
+   "fuentes": [
+    "claude"
+   ],
+   "propio": true
+  },
+  {
+   "id": "core_circuito",
+   "nombre": "Circuito de core suave",
+   "alias": [],
+   "escalera": "core_suave",
+   "orden": 1,
+   "tipo": "minutos",
+   "objetivo": "core",
+   "material": [
+    "suelo"
+   ],
+   "cues": [
+    "2–3 vueltas, 40 s por ejercicio y 20 s de transición",
+    "1) Hollow body · 2) Elevación de piernas colgado · 3) Plancha abdominal",
+    "4) Limpiaparabrisas (o rodillas de lado) · 5) Plancha lateral por lado",
+    "Sin fallo: es el día suave, va antes de la calidad que del ardor"
+   ],
+   "errores": [],
+   "criterios": [],
+   "notas": "Circuito escrito por Claude con ejercicios que sí están en el catálogo",
+   "fuentes": [
+    "claude"
+   ],
+   "propio": true
+  },
+  {
+   "id": "core_badin",
+   "nombre": "Rutina de core Badin",
+   "alias": [],
+   "escalera": "core_duro",
+   "orden": 1,
+   "tipo": "minutos",
+   "objetivo": "core",
+   "material": [
+    "suelo"
+   ],
+   "cues": [
+    "Tu rutina de siempre, unos 20 min"
+   ],
+   "errores": [],
+   "criterios": [],
+   "notas": "Rutina tuya: la app solo registra los minutos que haces",
+   "fuentes": [
+    "claude"
+   ],
+   "propio": true
+  },
+  {
+   "id": "pino_paralelas_aguante",
+   "nombre": "Pino en paralelas (aguante)",
+   "alias": [],
+   "escalera": "pino_paralelas",
+   "orden": 1,
+   "tipo": "segundos",
+   "objetivo": "skill",
+   "material": [
+    "paralelas"
+   ],
+   "cues": [
+    "Agarre firme, muñecas neutras: en paralelas la muñeca sufre mucho menos que en el suelo",
+    "Mismo cuerpo que en suelo: glúteo y abdomen apretados, hombros empujando",
+    "Para salir, suelta una mano y gira; nunca te quedes agarrado con las dos"
+   ],
+   "errores": [],
+   "criterios": [],
+   "notas": "Más fácil de equilibrar que en suelo (el agarre corrige adelante y atrás), pero da menos información de dedos",
+   "fuentes": [
+    "claude"
+   ],
+   "propio": true
+  },
+  {
+   "id": "hspu_paralelas_parcial",
+   "nombre": "Flexión de pino en paralelas, rango parcial",
+   "alias": [],
+   "escalera": "pino_paralelas",
+   "orden": 2,
+   "tipo": "repes",
+   "objetivo": "fuerza",
+   "material": [
+    "paralelas"
+   ],
+   "cues": [
+    "Baja solo hasta donde puedas volver a subir",
+    "Codos hacia atrás, no abiertos"
+   ],
+   "errores": [],
+   "criterios": [],
+   "notas": null,
+   "fuentes": [
+    "claude"
+   ],
+   "propio": true
+  },
+  {
+   "id": "hspu_paralelas",
+   "nombre": "Flexión de pino en paralelas, rango completo",
+   "alias": [],
+   "escalera": "pino_paralelas",
+   "orden": 3,
+   "tipo": "repes",
+   "objetivo": "fuerza",
+   "material": [
+    "paralelas"
+   ],
+   "cues": [
+    "Baja hasta que los hombros pasen por debajo de las manos: es más rango que contra la pared"
+   ],
+   "errores": [],
+   "criterios": [],
+   "notas": "Con el rango extra, esta versión es más dura que la misma flexión en el suelo",
+   "fuentes": [
+    "claude"
+   ],
+   "propio": true
+  },
+  {
+   "id": "press_negativa",
+   "nombre": "Negativa de pino por fuerza (bajar a enanito)",
+   "alias": [],
+   "escalera": "pino_fuerza",
+   "orden": 3,
+   "tipo": "negativa",
+   "objetivo": "skill",
+   "material": [
+    "suelo"
+   ],
+   "cues": [
+    "Desde el pino, baja despacio llevando las rodillas al pecho hasta quedarte en enanito",
+    "Resiste con el hombro; el peso va pasando por delante de las manos"
+   ],
+   "errores": [],
+   "criterios": [
+    "Orientativo: 4 negativas controladas, parando 5 s abajo, antes de intentar la subida (Añadido por Claude)"
+   ],
+   "notas": null,
+   "fuentes": [
+    "claude"
+   ],
+   "propio": true
+  },
+  {
+   "id": "press_enanito",
+   "nombre": "Subida a pino desde enanito",
+   "alias": [],
+   "escalera": "pino_fuerza",
+   "orden": 4,
+   "tipo": "repes",
+   "objetivo": "skill",
+   "material": [
+    "suelo"
+   ],
+   "cues": [
+    "Aguanta 2 s en enanito, empuja el suelo y estira la cadera al final",
+    "Si te atascas, el peso se ha quedado detrás de la muñeca"
+   ],
+   "errores": [
+    "Doblar el codo por miedo: es lo que convierte el press en salto"
+   ],
+   "criterios": [],
+   "notas": null,
+   "fuentes": [
+    "claude"
+   ],
+   "propio": true
+  },
+  {
+   "id": "press_pica_elevada",
+   "nombre": "Press a pino desde pica con pies elevados",
+   "alias": [],
+   "escalera": "pino_fuerza",
+   "orden": 6,
+   "tipo": "repes",
+   "objetivo": "skill",
+   "material": [
+    "superficie elevada"
+   ],
+   "cues": [
+    "Cadera alta, piernas rectas; sube llevando el peso adelante y recoge al final"
+   ],
+   "errores": [],
+   "criterios": [],
+   "notas": null,
+   "fuentes": [
+    "claude"
+   ],
+   "propio": true
+  },
+  {
+   "id": "press_straddle",
+   "nombre": "Press a pino en straddle desde el suelo",
+   "alias": [],
+   "escalera": "pino_fuerza",
+   "orden": 7,
+   "tipo": "repes",
+   "objetivo": "skill",
+   "material": [
+    "suelo"
+   ],
+   "cues": [
+    "Piernas abiertas y rectas; la compresión hace la mitad del trabajo"
+   ],
+   "errores": [],
+   "criterios": [],
+   "notas": "Aquí la compresión manda: comparte trabajo con la V-sit",
+   "fuentes": [
+    "claude"
+   ],
+   "propio": true
+  },
+  {
+   "id": "fl_neg_tuck",
+   "nombre": "Negativa de front lever en tuck",
+   "alias": [],
+   "escalera": "fl_fuerza",
+   "orden": 1,
+   "tipo": "negativa",
+   "objetivo": "skill",
+   "material": [
+    "barra"
+   ],
+   "cues": [
+    "Desde arriba, con la pelvis alta, baja con los brazos rectos y las escápulas deprimidas"
+   ],
+   "errores": [],
+   "criterios": [],
+   "notas": null,
+   "fuentes": [
+    "claude"
+   ],
+   "propio": true
+  },
+  {
+   "id": "fl_neg_adv_tuck",
+   "nombre": "Negativa de front lever en advanced tuck",
+   "alias": [],
+   "escalera": "fl_fuerza",
+   "orden": 2,
+   "tipo": "negativa",
+   "objetivo": "skill",
+   "material": [
+    "barra"
+   ],
+   "cues": [
+    "Rodillas separadas del pecho; frena la bajada, no te dejes caer"
+   ],
+   "errores": [],
+   "criterios": [
+    "Orientativo: 4–5 negativas de 4–5 s cada una antes de pasar a una pierna (Añadido por Claude)"
+   ],
+   "notas": null,
+   "fuentes": [
+    "claude"
+   ],
+   "propio": true
+  },
+  {
+   "id": "fl_neg_una_pierna",
+   "nombre": "Negativa de front lever a una pierna",
+   "alias": [],
+   "escalera": "fl_fuerza",
+   "orden": 3,
+   "tipo": "negativa",
+   "objetivo": "skill",
+   "material": [
+    "barra"
+   ],
+   "cues": [],
+   "errores": [],
+   "criterios": [],
+   "notas": null,
+   "fuentes": [
+    "claude"
+   ],
+   "propio": true
+  },
+  {
+   "id": "fl_neg_straddle",
+   "nombre": "Negativa de front lever en straddle",
+   "alias": [],
+   "escalera": "fl_fuerza",
+   "orden": 4,
+   "tipo": "negativa",
+   "objetivo": "skill",
+   "material": [
+    "barra"
+   ],
+   "cues": [],
+   "errores": [],
+   "criterios": [],
+   "notas": "Es donde estás cuando llegas fresco: controlada a medias. Cuenta solo las que frenas de verdad",
+   "fuentes": [
+    "claude"
+   ],
+   "propio": true
+  },
+  {
+   "id": "fl_press_tuck",
+   "nombre": "Press a front lever en tuck",
+   "alias": [],
+   "escalera": "fl_fuerza",
+   "orden": 5,
+   "tipo": "repes",
+   "objetivo": "skill",
+   "material": [
+    "barra"
+   ],
+   "cues": [
+    "Desde colgado, brazos rectos, lleva la pelvis hacia arriba tirando con el dorsal",
+    "Nada de doblar el codo"
+   ],
+   "errores": [],
+   "criterios": [],
+   "notas": null,
+   "fuentes": [
+    "claude"
+   ],
+   "propio": true
+  },
+  {
+   "id": "fl_press_adv_tuck",
+   "nombre": "Press a front lever en advanced tuck",
+   "alias": [],
+   "escalera": "fl_fuerza",
+   "orden": 6,
+   "tipo": "repes",
+   "objetivo": "skill",
+   "material": [
+    "barra"
+   ],
+   "cues": [],
+   "errores": [],
+   "criterios": [],
+   "notas": null,
+   "fuentes": [
+    "claude"
+   ],
+   "propio": true
+  },
+  {
+   "id": "fl_press_straddle",
+   "nombre": "Press a front lever en straddle",
+   "alias": [],
+   "escalera": "fl_fuerza",
+   "orden": 7,
+   "tipo": "repes",
+   "objetivo": "skill",
+   "material": [
+    "barra"
+   ],
+   "cues": [],
+   "errores": [],
+   "criterios": [],
+   "notas": null,
+   "fuentes": [
+    "claude"
+   ],
+   "propio": true
   }
  ],
  "conflictos": [
@@ -3665,13 +5266,24 @@
    "a": "Tu plan: empuje y tirón en días separados",
    "b": "Domein: empuje y tirón en la misma sesión (aunque dice que separarlos también vale)",
    "decision_tracker": "Se mantiene tu A/B"
+  },
+  {
+   "tema": "Orden de la búlgara en la escalera de pierna",
+   "a": "Maximum Potential: búlgara como paso 3, antes del trabajo a una pierna",
+   "b": "Calisteniapp: no la incluye; pasa de la zancada con déficit a la subida a plataforma",
+   "decision_tracker": "La búlgara se queda entre la zancada con déficit y la subida a plataforma"
   }
  ],
  "pendientes": [
-  "Pierna: ninguna fuente enseña búlgara, shrimp o pistol. La escalera de pierna sigue sin fuente",
   "Dragon flag: sin fuente; se ha quitado del tracker y el candlestick de Eryc ocupa su lugar",
   "Nivel de fondos y aguante de pino: necesarios para saber si cumples los requisitos de plancha (20–25 fondos) y de flexión de pino libre (10–15 s de pino)",
-  "Material: paralelas bajas o parallettes para plancha y L-sit"
+  "Material: paralelas bajas o parallettes para plancha y L-sit",
+  "Cadena posterior de pierna (curl nórdico, puente unilateral, gemelos): sin fuente; la escalera de pistol es casi todo cuádriceps",
+  "Prehab de codo y bíceps para el trabajo con brazo recto (front lever, plancha): sin fuente",
+  "Programación de Petru: probablemente de pago; buscar una tercera fuente de frecuencia y descargas",
+  "YouTube bloquea mis peticiones: los vídeos hay que pasarlos como clippings de texto",
+  "Fondos, muscle up, front lever avanzado, dominada a una mano sin lastre, V-sit y compresión: peldaños añadidos por Claude, sin clipping detrás. Sustituir cuando haya vídeo",
+  "Sin lastre disponible: toda la progresión va por variante, no por kilos"
  ],
  "principios": [
   {
@@ -3738,6 +5350,16 @@
    "tema": "Técnica",
    "texto": "Grábate para comprobar la técnica; tras el entreno apunta qué falló y qué salió bien.",
    "fuente": "pedro-tuck-press@14:51"
+  },
+  {
+   "tema": "Pierna",
+   "texto": "Rutina de ejemplo para conseguir la pistol: 1×30 s estiramiento de gemelos, 3×4-6 subida a plataforma, 2×8-12 zancada atrás con déficit, 3×6-10 elevaciones de pierna con cadera flexionada.",
+   "fuente": "calisteniapp-pistol@rutina"
+  },
+  {
+   "tema": "Pino",
+   "texto": "Equilibrio y fuerza se entrenan a la vez: el equilibrio es práctica frecuente y poco cansada, la fuerza es carga. Lo que sí tiene requisito es el pino por fuerza: aguantar el pino y tener flexiones de pino en pared antes de intentar la subida.",
+   "fuente": "claude@criterio"
   }
  ],
  "descartados": [

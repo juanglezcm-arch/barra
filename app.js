@@ -1,5 +1,5 @@
 "use strict";
-const APP_VERSION="1.1.0";
+const APP_VERSION="1.5.0";
 fetch("catalogo.json",{cache:"no-cache"}).then(r=>r.json()).then(main).catch(e=>{
   console.error(e);
   document.getElementById("app").innerHTML='<p class="empty">No se ha podido cargar el catálogo. Abre la app una vez con conexión.</p>';
@@ -25,54 +25,46 @@ const SOURCES = {}; CATALOGO.fuentes.forEach(f=>SOURCES[f.id]=f);
 const EX = {}; CATALOGO.ejercicios.forEach(e=>EX[e.id]=e);
 const LADDERS = {}; CATALOGO.escaleras.forEach(s=>LADDERS[s.id]={nombre:s.nombre,peldanos:s.peldanos});
 
-// Pierna: ninguna fuente la cubre todavía. Se sustituye cuando llegue un clipping de pierna.
 function P(id,nombre,tipo="repes"){EX[id]={id,nombre,tipo,provisional:true,cues:[],errores:[],criterios:[],notas:null,fuentes:[]}}
-P("p_bulgara","Sentadilla búlgara"); P("p_shrimp_asistida","Shrimp squat asistida"); P("p_pistol_caja","Pistol a caja"); P("p_pistol","Pistol squat"); P("p_pistol_lastrado","Pistol squat lastrado");
-LADDERS.pierna={nombre:"Pierna: búlgara → pistol",peldanos:["p_bulgara","p_shrimp_asistida","p_pistol_caja","p_pistol","p_pistol_lastrado"]};
 // Nombres de versiones anteriores (para el historial)
-const LEGACY={p_fondos_lastrados:"Fondos lastrados",p_dominada_lastrada:"Dominada lastrada",p_remo_arquero:"Remo arquero",p_df_tuck:"Dragon flag tuck",p_toes_to_bar:"Toes to bar",p_dominada_arquera:"Dominada arquera",p_lsit_tuck:"Tuck L-sit",p_remo_australiano_elevado:"Remo australiano pies elevados",p_elev_piernas:"Elevación de piernas colgado",p_dominada_pecho:"Dominada pecho a la barra"};
+const LEGACY={p_bulgara:"Sentadilla búlgara",p_shrimp_asistida:"Shrimp squat asistida",p_pistol_caja:"Pistol a caja",p_pistol:"Pistol squat",p_pistol_lastrado:"Pistol squat lastrado",p_fondos_lastrados:"Fondos lastrados",p_dominada_lastrada:"Dominada lastrada",p_remo_arquero:"Remo arquero",p_df_tuck:"Dragon flag tuck",p_toes_to_bar:"Toes to bar",p_dominada_arquera:"Dominada arquera",p_lsit_tuck:"Tuck L-sit",p_remo_australiano_elevado:"Remo australiano pies elevados",p_elev_piernas:"Elevación de piernas colgado",p_dominada_pecho:"Dominada pecho a la barra"};
 const exName=id=>(EX[id]&&EX[id].nombre)||LEGACY[id]||id;
 
 /* Plantillas. Primer ejercicio = lo que más cuesta. Secuencia A/B sin fechas.
    track: varios huecos comparten nivel (el pino se practica los tres días de empuje).
    rangos: series y rango propios de un peldaño concreto. */
 const S=(id,ladder,start,series,min,max,o={})=>({id,ladder,start,_r:[series,min,max],...o});
-const HOLD_PLANCHA={lean_planche:[4,8,15],tuck_planche:[4,8,15],adv_tuck_planche:[4,6,15],straddle_planche_goma:[4,5,7],straddle_planche:[4,4,10],half_lay_planche:[4,4,10],full_planche:[5,2,5]};
-const PINO={pino_paralelas_hombros:[4,15,30],pino_pared_caminando:[4,15,30],pino_pared_espaldas:[4,20,45],pino_libre:[6,5,15],pino_una_mano:[6,2,5]};
+const PINO={pino_paralelas_hombros:[6,20,40],pino_pared_caminando:[6,20,40],pino_pared_espaldas:[6,25,50],pino_libre:[6,10,25],pino_una_mano:[6,3,8]};
+const PINO_F={rana:[5,10,20],enanito:[5,5,15],press_negativa:[5,3,5],press_enanito:[5,1,4],pino_fuerza:[5,1,5],press_pica_elevada:[5,2,5],press_straddle:[5,1,4]};
+
+/* Los tres bloques de cada sesión, en este orden:
+   técnica (fresco, sin fallo) → fuerza (carga alta, poca técnica) → volumen (acumular). */
+const BLOQUES={
+  tecnica:{n:"Bloque 1 · Técnica", d:"Lo más complejo, con el cuerpo fresco. Series cortas, sin llegar al fallo."},
+  fuerza: {n:"Bloque 2 · Fuerza",  d:"Mucha carga, poca técnica. Pocas repeticiones y descansos largos."},
+  volumen:{n:"Bloque 3 · Volumen", d:"Variantes más fáciles para acumular trabajo. Las superseries van seguidas, sin descanso entre ellas."},
+  core:   {n:"Bloque 4 · Core",    d:"Todos los días. Suave en los de empuje, a tope en los de tirón."},
+};
 const PLANTILLAS=[
- {id:"A1",patron:"Empuje",tipo:"Pesado",descanso:180,slots:[
-   S("A1_pino","pino_equilibrio","pino_pared_caminando",4,15,30,{track:"pino",rangos:PINO}),
-   S("A1_vert","empuje_vertical","hspu_pared_parcial",4,3,5),
-   S("A1_hor","camino_una_mano","flex_arquera",3,3,5,{lado:true}),
-   S("A1_fondos","fondos_lastre","fondos_lastrados",3,3,5,{lastre:true,kg0:5}),
-   S("A1_pierna","pierna","p_pistol_caja",3,3,5,{lado:true})]},
- {id:"B1",patron:"Tirón",tipo:"Pesado",descanso:180,slots:[
-   S("B1_dom","dominada_lastre","dominada_lastrada",4,3,5,{lastre:true,kg0:5}),
-   S("B1_uni","tiron_una_mano","aguante_una_mano",3,3,5,{lado:true,rangos:{aguante_una_mano:[3,5,10]}}),
-   S("B1_remo","remo","remo_arquero",3,4,6,{lado:true}),
-   S("B1_core","core_colgado","toes_to_bar",3,5,8)]},
- {id:"A2",patron:"Empuje",tipo:"Técnica",descanso:120,slots:[
-   S("A2_pino","pino_equilibrio","pino_pared_caminando",4,15,30,{track:"pino",rangos:PINO}),
-   S("A2_fuerza","pino_fuerza","rana",4,5,10,{rangos:{rana:[4,5,10],enanito:[4,5,10],pino_fuerza:[4,1,5]}}),
-   S("A2_hold","plancha_aguante","lean_planche",4,8,15,{rangos:HOLD_PLANCHA}),
-   S("A2_plancha","plancha_flexiones","flex_lean_planche",3,4,6),
-   S("A2_pierna","pierna","p_shrimp_asistida",3,4,6,{lado:true})]},
- {id:"B2",patron:"Tirón",tipo:"Técnica",descanso:120,slots:[
-   S("B2_expl","tiron_explosivo","dominada_explosiva",4,3,4,{rangos:{muscle_up:[4,2,5]}}),
-   S("B2_fl","front_lever","fl_tuck",4,5,15),
-   S("B2_lsit","lsit","lsit_tuck",4,10,30,{track:"lsit"}),
-   S("B2_suelo","core_suelo","elevacion_piernas_suelo",3,6,10,{rangos:{plancha_abdominal:[3,30,60]}})]},
- {id:"A3",patron:"Empuje",tipo:"Volumen",descanso:90,slots:[
-   S("A3_pino","pino_equilibrio","pino_pared_caminando",4,15,30,{track:"pino",rangos:PINO}),
-   S("A3_vert","empuje_vertical","flex_pica_pies_elevados",3,8,12),
-   S("A3_hor","declinada_deficit","flex_deficit",3,8,12),
-   S("A3_fondos","fondos","fondos",3,8,12),
-   S("A3_pierna","pierna","p_bulgara",3,8,12,{lado:true})]},
- {id:"B3",patron:"Tirón",tipo:"Volumen",descanso:90,slots:[
-   S("B3_dom","tiron_volumen","dominada",3,8,12),
-   S("B3_remo","remo","remo_australiano_horizontal",3,8,12),
-   S("B3_core","core_colgado","elevacion_piernas_colgado",3,8,12),
-   S("B3_lsit","lsit","lsit_tuck",3,10,30,{track:"lsit"})]},
+ {id:"A",patron:"Empuje",tipo:"Pino · tríceps · pecho · core suave",min:120,slots:[
+   S("A_pino","pino_equilibrio","pino_pared_caminando",6,20,40,{track:"pino",rangos:PINO,bloque:"tecnica",descanso:60,t:14}),
+   S("A_pinopar","pino_paralelas","pino_paralelas_aguante",5,15,30,{rangos:{pino_paralelas_aguante:[5,15,30],hspu_paralelas_parcial:[4,3,6],hspu_paralelas:[4,3,6],pino_una_mano:[6,3,8]},bloque:"tecnica",descanso:90,t:12}),
+   S("A_press","pino_fuerza","enanito",5,5,15,{rangos:PINO_F,bloque:"tecnica",descanso:90,t:14}),
+   S("A_vert","empuje_vertical","hspu_pared_parcial",5,3,6,{bloque:"fuerza",descanso:180,t:22}),
+   S("A_plancha","plancha_flexiones","flex_lean_planche",4,4,8,{bloque:"fuerza",descanso:150,t:16}),
+   S("A_dips","fondos_fuerza","fondos",4,8,12,{bloque:"volumen",descanso:90,sup:"Superserie: fondos + flexiones",t:14}),
+   S("A_flex","declinada_deficit","flex_declinada",4,8,12,{bloque:"volumen",descanso:90,sup:"Superserie: fondos + flexiones",t:14}),
+   S("A_core","core_suave","core_circuito",1,10,15,{bloque:"core",descanso:30,t:14})]},
+ {id:"B",patron:"Tirón",tipo:"Front lever · dominadas · core a tope",min:124,slots:[
+   S("B_fl","front_lever","fl_adv_tuck",6,5,15,{bloque:"tecnica",descanso:90,t:12}),
+   S("B_mu","muscleup","muscle_up_balanceo",5,1,3,{bloque:"tecnica",descanso:120,t:12}),
+   S("B_vsit","vsit","compresion_pike",4,10,25,{bloque:"tecnica",descanso:60,t:8}),
+   S("B_flf","fl_fuerza","fl_neg_adv_tuck",5,3,6,{bloque:"fuerza",descanso:150,t:16}),
+   S("B_una","tiron_una_mano","dominada_arquera",4,3,6,{lado:true,bloque:"fuerza",descanso:180,t:18}),
+   S("B_remo","remo_fl","remo_fl_goma",4,5,8,{bloque:"fuerza",descanso:150,t:14}),
+   S("B_dom","tiron_volumen","dominada",4,8,12,{bloque:"volumen",descanso:90,sup:"Superserie: dominadas + remo",t:12}),
+   S("B_remoa","remo","remo_australiano_horizontal",4,8,12,{bloque:"volumen",descanso:90,sup:"Superserie: dominadas + remo",t:12}),
+   S("B_core","core_duro","core_badin",1,18,22,{bloque:"core",descanso:30,t:20})]},
 ];
 const SLOT={}, PL={};
 PLANTILLAS.forEach(p=>{PL[p.id]=p; p.slots.forEach(s=>{
@@ -81,15 +73,18 @@ PLANTILLAS.forEach(p=>{PL[p.id]=p; p.slots.forEach(s=>{
   Object.defineProperty(s,"series",{get:()=>r()[0]}); Object.defineProperty(s,"min",{get:()=>r()[1]}); Object.defineProperty(s,"max",{get:()=>r()[2]});
 })});
 const key=sid=>SLOT[sid].track||sid;
+const restOf=sid=>SLOT[sid].descanso||90;
+const minsBloque=(p,bl)=>p.slots.filter(s=>s.bloque===bl).reduce((a,s)=>a+(s.t||0),0);
+const fmtMin=sec=>sec>=60?(sec%60?Math.floor(sec/60)+":"+String(sec%60).padStart(2,"0"):(sec/60)+" min"):sec+" s";
 
 /* Preparación (Domein): se marca, no se registra */
 const PREP=[
- "Movilidad articular suave, 2 min: hombros, codos, muñecas y columna",
- "Core: aguantes de hollow body y elevaciones de piernas",
- "Escápulas: retracciones colgado y protracciones en paralelas",
- "1–2 series de aproximación suaves del primer ejercicio fuerte",
+ "Muñecas: círculos, apoyo con dedos adelante y atrás, 1–2 min (antes del pino y de la plancha)",
+ "Hombro y escápulas: retracciones colgado, protracciones en paralelas, círculos con los brazos",
+ "Core: un aguante de hollow body y elevaciones de piernas",
+ "1–2 series de aproximación suaves del primer ejercicio del bloque de fuerza",
 ];
-const PREP_EXTRA={Empuje:"Días de pino: calienta bien las muñecas y la movilidad de hombro",Tirón:"Días de tirón: cuélgate unos segundos para calentar el agarre"};
+const PREP_EXTRA={Empuje:"La movilidad de hombro y muñeca va aquí, antes de empezar; los estiramientos largos, al terminar",Tirón:"Cuélgate 20–30 s para calentar el agarre antes del front lever"};
 
 /* ===== Estado =====
    El nivel de cada ejercicio NO se guarda directamente: se recalcula reproduciendo
@@ -144,7 +139,8 @@ function setSync(m){syncMsg=m; const el=document.getElementById("sync"); if(el)e
 /* ===== Progresión (determinista) ===== */
 const lad=sid=>LADDERS[SLOT[sid].ladder].peldanos;
 const curEx=sid=>EX[lad(sid)[Math.min(ST(sid).idx,lad(sid).length-1)]];
-const unit=sid=>curEx(sid).tipo==="segundos"?"s":"repes";
+const unit=sid=>{const t=curEx(sid).tipo; return t==="segundos"?"s":t==="minutos"?"min":"repes"};
+const paso=sid=>unit(sid)==="s"?5:1;
 function evaluate(sid,reg){
   const s=SLOT[sid], st=ST(sid), L=lad(sid);
   const r={sid,antes:curEx(sid).nombre,cambio:null,texto:""};
@@ -218,8 +214,9 @@ function hint(sid){
 }
 function srcLink(tag){
   const [src,t]=tag.split("@"); const so=SOURCES[src]; if(!so)return "";
-  let href=so.url; if(t){const p=t.split(":").map(Number); const secs=p.length===3?p[0]*3600+p[1]*60+p[2]:p[0]*60+p[1]; href+=(href.includes("?")?"&":"?")+"t="+secs+"s"}
-  return `<a href="${href}" target="_blank" rel="noopener">${esc(so.autor)}${t?" "+t:""}</a>`;
+  if(!so.url)return `<span class="muted">${esc(so.autor)}</span>`;
+  let href=so.url; if(/^\d+(:\d+)+$/.test(t||"")){const p=t.split(":").map(Number); const secs=p.length===3?p[0]*3600+p[1]*60+p[2]:p[0]*60+p[1]; href+=(href.includes("?")?"&":"?")+"t="+secs+"s"}
+  return `<a href="${href}" target="_blank" rel="noopener">${esc(so.autor)}${t?" "+esc(t):""}</a>`;
 }
 function techBody(e){
   if(e.provisional)return `<p class="small muted">Sin fuente todavía. Se sustituirá cuando ingiera un clipping de este patrón.</p>`;
@@ -228,49 +225,71 @@ function techBody(e){
    ${(e.errores||[]).map(c=>`<li class="ko">${esc(c)}</li>`).join("")}
    ${(e.criterios||[]).map(c=>`<li class="cr">${esc(c)}</li>`).join("")}
    ${e.notas?`<li class="nt">${esc(e.notas)}</li>`:""}</ul>
-   ${(e.fuentes||[]).length?`<p class="small">Ver en vídeo: ${e.fuentes.map(srcLink).join(" · ")}</p>`:""}`;
+   ${(e.fuentes||[]).length?`<p class="small">Ver la fuente: ${e.fuentes.map(srcLink).join(" · ")}</p>`:""}`;
 }
 function techHTML(e){return `<details class="tech"><summary>Técnica</summary>${techBody(e)}</details>`}
-const provTag=e=>e.provisional?'<span class="tag prov">sin fuente</span>':"";
+const provTag=e=>e.provisional?' <span class="tag prov">sin fuente</span>':(e.propio?' <span class="tag prov">sin vídeo</span>':"");
 
+function initPending(sid){
+  const s=SLOT[sid], cur=setsCur(sid), lv=lastValues(sid);
+  const base=cur.length?cur.map(x=>x.v):(lv&&lv.length?lv.slice(0,s.series):[]);
+  while(base.length<s.series)base.push(base.length?base[base.length-1]:s.min);
+  tocado[sid]=base.map(()=>cur.length>0);
+  return base;
+}
+const tocado={};
+function slotCard(s,i,p){
+  const a=state.activa, e=curEx(s.id), all=(a&&a.registros[s.id]?.sets)||[], cur=a?setsCur(s.id):[];
+  const hechas=cur.length, open=openSlot===s.id;
+  let h=`<div class="card ${hechas&&!open?"done":""}">`;
+  h+=`<button class="card-h" data-open="${s.id}" aria-expanded="${open}"><div class="pos"><b>${i}</b></div><div style="flex:1"><div class="name">${esc(e.nombre)}${provTag(e)}</div>
+    <div class="meta">${targetText(s.id)} · ${levelText(s.id)}${streakDots(s.id)}</div></div>
+    <div class="pos">${hechas?`<b>${cur.map(x=>x.v).join("·")}</b><small>hecho</small>`:`<b>·</b><small>sin apuntar</small>`}</div></button>`;
+  if(open){
+    if(!pending[s.id])pending[s.id]=initPending(s.id);
+    const arr=pending[s.id], lv=lastValues(s.id), other=all.filter(x=>x.ex!==e.id), u=unit(s.id);
+    h+=`<div class="body">${shiftRow(s.id)}
+      ${other.length?`<p class="small muted">Antes, con otra variante: ${other.map(x=>`${esc(exName(x.ex))} ${x.v}`).join(" · ")}</p>`:""}
+      <p class="small muted">Apunta las series al terminar el ejercicio. ${lv?`Última vez: ${lv.join(" · ")} ${u}.`:"Primera vez con esta variante."}</p>
+      <div class="rows">${arr.map((v,j)=>`<div class="srow"><span class="sn">${j+1}</span>
+        <button class="adj2" data-sv="${s.id}|${j}|-1" aria-label="Restar">−</button>
+        <b class="sv ${v>=s.max?"hit":(v>0&&v<s.min?"miss":"")}">${v?v:"—"}</b>
+        <button class="adj2" data-sv="${s.id}|${j}|1" aria-label="Sumar">+</button>
+        <span class="su">${u}</span></div>`).join("")}</div>
+      <div class="row"><button class="link" data-addrow="${s.id}">+ serie</button>${arr.length>1?`<button class="link" data-delrow="${s.id}">− serie</button>`:"<span></span>"}<button class="link" data-rest="${s.id}">Descanso ${fmtMin(restOf(s.id))}</button></div>
+      <button class="log" data-savex="${s.id}">${hechas?"Actualizar ejercicio":"Guardar ejercicio"}</button>
+      ${hint(s.id)}${techHTML(e)}</div>`;
+  }
+  return h+`</div>`;
+}
 function renderHoy(){
   const p=state.activa?PL[state.activa.plantilla]:nextPl(), pos=PLANTILLAS.indexOf(p);
-  let h=`<section class="next${state.activa?" live":""}"><div class="sub">${state.activa?"Entreno en curso":"Siguiente entreno"} · sesión ${sesiones.length+1}</div>
-    <div class="kind">${p.patron} · ${p.tipo}</div>
-    <div class="sub">Descanso ${p.descanso/60} min entre series</div>
-    <div class="seq" aria-label="Posición en la semana">${PLANTILLAS.map((x,i)=>`<span class="${i===pos?"on":i<pos?"done":""}" title="${x.patron} ${x.tipo}"></span>`).join("")}</div></section>`;
-  if(!state.activa){
+  const a=state.activa;
+  let h=`<section class="next${a?" live":""}"><div class="sub">${a?"Entreno en curso":"Siguiente entreno"} · sesión ${sesiones.length+1}</div>
+    <div class="kind">${p.patron}</div>
+    <div class="sub">${esc(p.tipo)} · ≈ ${p.min} min</div>
+    <div class="seq" aria-label="Alternancia">${PLANTILLAS.map((x,i)=>`<span class="${i===pos?"on":""}" title="${x.patron}"></span>`).join("")}</div></section>`;
+  if(!a){
     if(sesiones.length>=3&&Date.now()-(state.ultimaCopia||0)>14*864e5)h+=`<p class="small hint up" style="margin-top:0">Tus datos solo están en este móvil. Descarga una copia de seguridad desde Ajustes.</p>`;
-    if(sesiones.length<6)h+=`<p class="small muted">Primeros entrenos: si no sabes en qué variante estás, ajústala aquí o en mitad del entreno. Los cambios manuales reinician la racha de ese ejercicio.</p>`;
-    p.slots.forEach((s,i)=>{const e=curEx(s.id);
-      h+=`<div class="card"><div class="card-h"><div class="pos"><b>${i+1}</b></div><div style="flex:1"><div class="name">${esc(e.nombre)}${provTag(e)}</div>
-      <div class="meta">${targetText(s.id)} · ${levelText(s.id)}${streakDots(s.id)}</div></div></div><div class="body tight">${shiftRow(s.id)}</div></div>`});
-    h+=`<button class="primary" id="start">Empezar entreno</button><button class="ghost" id="other">Hacer otro entreno</button>`;
+    if(sesiones.length<6)h+=`<p class="small muted">Si no sabes en qué variante estás, ajústala aquí o durante el entreno. Los cambios manuales reinician la racha de ese ejercicio.</p>`;
+    let bl=null, n=0, supPrev=null;
+    p.slots.forEach(s=>{
+      if(s.bloque!==bl){bl=s.bloque; h+=`<h2>${BLOQUES[bl].n} <span class="muted small">≈ ${minsBloque(p,bl)} min</span></h2><p class="small muted">${BLOQUES[bl].d}</p>`}
+      const e=curEx(s.id); n++;
+      if(s.sup&&s.sup!==supPrev)h+=`<div class="supbar">${esc(s.sup)}</div>`; supPrev=s.sup;
+      h+=`<div class="card"><div class="card-h"><div class="pos"><b>${n}</b></div><div style="flex:1"><div class="name">${esc(e.nombre)}${provTag(e)}</div>
+      <div class="meta">${targetText(s.id)} · ${levelText(s.id)}${s.t?` · ${s.t} min`:""}${streakDots(s.id)}</div></div></div><div class="body tight">${shiftRow(s.id)}</div></div>`});
+    h+=`<button class="primary" id="start">Empezar entreno</button><button class="ghost" id="other">Hacer el otro entreno</button>`;
     return h;
   }
-  const a=state.activa;
-  h+=`<details class="card prep" ${a.prepOk?"":"open"}><summary class="card-h"><div style="flex:1"><div class="name">Preparación</div><div class="meta">Antes del primer ejercicio · Domein</div></div></summary><div class="body">${[...PREP,PREP_EXTRA[p.patron]].map((x,i)=>`<label class="chk"><input type="checkbox" data-prep="${i}" ${(a.prep||[])[i]?"checked":""}> ${esc(x)}</label>`).join("")}</div></details>`;
-  if(!openSlot||!p.slots.find(s=>s.id===openSlot))openSlot=(p.slots.find(s=>setsCur(s.id).length<s.series)||p.slots[0]).id;
-  p.slots.forEach((s,i)=>{
-    const e=curEx(s.id), all=(a.registros[s.id]?.sets)||[], cur=setsCur(s.id), done=cur.length>=s.series, open=openSlot===s.id;
-    h+=`<div class="card ${done&&!open?"done":""}"><button class="card-h" data-open="${s.id}" aria-expanded="${open}"><div class="pos"><b>${i+1}</b></div><div style="flex:1"><div class="name">${esc(e.nombre)}${provTag(e)}</div>
-      <div class="meta">${targetText(s.id)} · ${levelText(s.id)}${streakDots(s.id)}</div></div>
-      <div class="pos"><b>${cur.length}</b><small>de ${s.series}</small></div></button>`;
-    if(open){
-      const ed=editing&&editing.sid===s.id?editing.i:null;
-      if(pending[s.id]==null)pending[s.id]=defaultValue(s.id);
-      const lv=lastValues(s.id), other=all.filter(x=>x.ex!==e.id);
-      h+=`<div class="body">${shiftRow(s.id)}
-        ${other.length?`<p class="small muted">Antes, con otra variante: ${other.map(x=>`${esc(exName(x.ex))} ${x.v}`).join(" · ")}</p>`:""}
-        <div class="sets">${all.map((x,j)=>x.ex!==e.id?"":`<button class="chip ${x.v>=s.max?"hit":x.v<s.min?"miss":""} ${ed===j?"sel":""}" data-chip="${s.id}|${j}" aria-label="Editar serie">${x.v}</button>`).join("")}${Array.from({length:Math.max(0,s.series-cur.length)}).map(()=>`<span class="chip empty">·</span>`).join("")}</div>
-        <div class="stepper"><button class="adj" data-step="-1" aria-label="Restar">−</button>
-          <div class="big"><output id="val">${pending[s.id]}</output><small>${unit(s.id)}${s.lado?" por lado":""}${lv&&ed==null?` · última vez ${lv.join("·")}`:""}</small></div>
-          <button class="adj" data-step="1" aria-label="Sumar">+</button></div>
-        ${ed!=null?`<button class="log" data-save="${s.id}">Guardar cambio</button><div class="row"><button class="link" data-delset="${s.id}">Borrar esta serie</button><button class="link" data-canceled="1">Cancelar</button></div>`
-          :`<button class="log" data-log="${s.id}">Apuntar serie</button><div class="row"><span class="small muted">${cur.length?"Toca una serie para corregirla":""}</span><button class="link" data-next="${s.id}">Siguiente ejercicio</button></div>`}
-        ${hint(s.id)}${techHTML(e)}</div>`;
-    }
-    h+=`</div>`;
+  h+=`<details class="card prep" ${a.prepOk?"":"open"}><summary class="card-h"><div style="flex:1"><div class="name">Preparación</div><div class="meta">Antes del bloque de técnica</div></div></summary><div class="body">${[...PREP,PREP_EXTRA[p.patron]].map((x,i)=>`<label class="chk"><input type="checkbox" data-prep="${i}" ${(a.prep||[])[i]?"checked":""}> ${esc(x)}</label>`).join("")}</div></details>`;
+  if(!openSlot||!p.slots.find(s=>s.id===openSlot))openSlot=(p.slots.find(s=>!setsCur(s.id).length)||p.slots[0]).id;
+  let bl=null, n=0, supPrev=null;
+  p.slots.forEach(s=>{
+    if(s.bloque!==bl){bl=s.bloque; h+=`<h2>${BLOQUES[bl].n} <span class="muted small">≈ ${minsBloque(p,bl)} min</span></h2>`}
+    n++;
+    if(s.sup&&s.sup!==supPrev)h+=`<div class="supbar">${esc(s.sup)}</div>`; supPrev=s.sup;
+    h+=slotCard(s,n,p);
   });
   h+=`<label class="f" for="nota">Nota del entreno</label><textarea id="nota" placeholder="Qué falló, qué salió bien…">${esc(a.nota||"")}</textarea><button class="primary" id="finish">Terminar entreno</button><button class="ghost" id="cancel">Descartar entreno</button>`;
   return h;
@@ -359,22 +378,26 @@ $("#app").addEventListener("click",async e=>{
   if(t.id==="start"){const p=nextPl(); state.activa={plantilla:p.id,inicio:Date.now(),registros:{}}; openSlot=p.slots[0].id; pending={}; editing=null; try{actx=actx||new (window.AudioContext||window.webkitAudioContext)()}catch(_){ } save(); render(); return}
   if(t.id==="other"){openPicker(); return}
   if(d.open){openSlot=openSlot===d.open?null:d.open; editing=null; render(); return}
-  if(d.step){const sid=openSlot; pending[sid]=Math.max(0,(pending[sid]||0)+(+d.step)*(unit(sid)==="s"?5:1)); $("#val").textContent=pending[sid]; return}
+  if(d.sv){const [sid,js,dir]=d.sv.split("|"), j=+js, p=paso(sid);
+    const arr=pending[sid], v=Math.max(0,(arr[j]||0)+(+dir)*p);
+    arr[j]=v; tocado[sid]=tocado[sid]||arr.map(()=>false); tocado[sid][j]=true;
+    // las series que aún no has tocado siguen a la primera: menos toques cuando todas son iguales
+    for(let k=j+1;k<arr.length;k++)if(!tocado[sid][k])arr[k]=v;
+    render(); return}
+  if(d.addrow){pending[d.addrow]=pending[d.addrow]||initPending(d.addrow); const arr=pending[d.addrow]; arr.push(arr[arr.length-1]||0); (tocado[d.addrow]=tocado[d.addrow]||[]).push(false); render(); return}
+  if(d.delrow){const arr=pending[d.delrow]; if(arr&&arr.length>1)arr.pop(); render(); return}
+  if(d.rest){startRest(restOf(d.rest)); return}
   if(d.kg){const [sid,dir]=d.kg.split("|"); const st=ST(sid); setLevel(sid,{kg:Math.max(0,+(st.kg+(+dir)*state.ajustes.inc).toFixed(2))},`Lastre: ${fmtKg(Math.max(0,+(st.kg+(+dir)*state.ajustes.inc).toFixed(2)))}`); return}
   if(d.shift){const [sid,dir]=d.shift.split("|"); if(SLOT[sid].lastre){const st=ST(sid); setLevel(sid,{kg:Math.max(0,+(st.kg+(+dir)*state.ajustes.inc).toFixed(2))})} else {pending[sid]=null; shift(sid,+dir)} return}
-  if(d.log){const sid=d.log, s=SLOT[sid], a=state.activa;
+  if(d.savex){const sid=d.savex, s=SLOT[sid], a=state.activa, arr=(pending[sid]||[]).filter(v=>v>0);
+    if(!arr.length){toast("Pon al menos una serie con un número"); return}
+    const ex=curEx(sid).id, kg=s.lastre?ST(sid).kg:0;
     a.registros[sid]=a.registros[sid]||{sets:[]};
-    a.registros[sid].sets.push({v:pending[sid],ex:curEx(sid).id,kg:s.lastre?ST(sid).kg:0});
+    a.registros[sid].sets=a.registros[sid].sets.filter(x=>x.ex!==ex).concat(arr.map(v=>({v,ex,kg})));
     save();
-    const p=PL[a.plantilla], allDone=p.slots.every(x=>setsCur(x.id).length>=x.series);
-    if(setsCur(sid).length>=s.series&&!hint(sid)){const nx=p.slots.find(x=>setsCur(x.id).length<x.series); if(nx)openSlot=nx.id}
-    if(!allDone)startRest(p.descanso); else stopRest();
-    render(); return}
-  if(d.chip){const [sid,j]=d.chip.split("|"); editing={sid,i:+j}; pending[sid]=state.activa.registros[sid].sets[+j].v; render(); return}
-  if(d.save){state.activa.registros[d.save].sets[editing.i].v=pending[d.save]; editing=null; pending[d.save]=null; save(); render(); return}
-  if(d.delset){state.activa.registros[d.delset].sets.splice(editing.i,1); editing=null; pending[d.delset]=null; save(); render(); return}
-  if(d.canceled){pending[editing.sid]=null; editing=null; render(); return}
-  if(d.next){const p=PL[state.activa.plantilla]; const i=p.slots.findIndex(x=>x.id===d.next); openSlot=p.slots[(i+1)%p.slots.length].id; editing=null; render(); window.scrollTo({top:0}); return}
+    const p=PL[a.plantilla], falta=p.slots.find(x=>!setsCur(x.id).length);
+    if(!hint(sid))openSlot=falta?falta.id:null;
+    render(); toast(`${esc(curEx(sid).nombre)}: ${arr.join(" · ")}`); return}
   if(t.id==="finish"){finish(); return}
   if(t.id==="cancel"){if(await ask("¿Descartar este entreno? No se guardará ni contará para la progresión.")){state.activa=null; stopRest(); save(); render()} return}
   if(d.set){const [sid,i]=d.set.split("|"); if(+i!==ST(sid).idx)setLevel(sid,{idx:+i}); return}
